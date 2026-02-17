@@ -36,19 +36,22 @@ export default function DevelopmentPage() {
       const imageData = canvas.toDataURL("image/png");
 
       canvas.toBlob(
-        async (imageData) => {
-          if (!imageData) return;
+        async (blob) => {
+          if (!blob) return;
 
           const formData = new FormData();
-          formData.append("file", imageData, "frame.jpg");
+          formData.append("file", blob, "frame.jpg");
 
           try {
-            const response = await fetch("http://localhost:4000/people-count", {
-              method: "POST",
-              body: formData,
-            });
-
+            const response = await fetch(
+              "http://localhost:4000/Thesis/home/people-count",
+              {
+                method: "POST",
+                body: formData,
+              },
+            );
             const data = await response.json();
+            console.log("YOLO people count:", data);
           } catch (error) {
             console.error("Error sending frame:", error);
           }

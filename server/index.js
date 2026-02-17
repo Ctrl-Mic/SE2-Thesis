@@ -6,6 +6,7 @@ const port = process.env.SERVER_PORT;
 const connectDB = require('./config/modelDB');
 const cors = require('cors');
 
+
 connectDB();
 
 const HomeRouter = require('./Routes/home');
