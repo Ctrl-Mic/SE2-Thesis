@@ -714,6 +714,318 @@
 {"ip":"::1","level":"info","message":"AUTH FIRSTLOGIN -- LotharKlaue checked: is_firsttime = true","method":"GET","timestamp":"2026-03-18 09:44:19"}
 {"ip":"::1","level":"info","message":"AUTH FIRSTLOGIN -- LotharKlaue checked: is_firsttime = true","method":"GET","timestamp":"2026-03-18 09:44:29"}
 {"ip":"::1","level":"info","message":"AUTH FIRSTLOGIN -- LotharKlaue checked: is_firsttime = true","method":"GET","timestamp":"2026-03-18 09:44:35"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-19 22:46:14"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-19 22:50:33"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-19 22:50:33"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-19 22:50:33"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-19 22:50:33"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-19 22:50:33"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-19 22:50:33"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-19 22:50:33"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-19 22:50:33"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-19 22:50:33"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-19 22:50:33"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-19 22:50:33"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-19 22:50:33"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-19 22:50:33"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-19 22:50:33"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-19 22:50:33"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-19 22:50:34"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-19 22:50:34"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-19 22:50:34"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-19 22:50:34"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-19 22:50:34"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-19 22:50:34"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-19 22:50:34"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-19 22:50:34"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-19 22:50:34"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-19 22:50:34"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-19 22:50:34"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-19 22:50:34"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-19 22:50:34"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-19 22:50:34"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-19 22:50:34"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-19 22:50:34"}
+{"ip":"::1","level":"info","message":"AUTH REGISTER -- Registered the user jhervinmungcal101@gmail.com: With status code 201","method":"POST","timestamp":"2026-03-19 22:51:10"}
+{"ip":"::1","level":"error","message":"AUTH LOGIN -- secretOrPrivateKey must have a value with status code (500)","method":"POST","timestamp":"2026-03-19 22:51:18"}
+{"ip":"::1","level":"error","message":"AUTH LOGIN -- secretOrPrivateKey must have a value with status code (500)","method":"POST","timestamp":"2026-03-19 22:51:28"}
+{"ip":"::1","level":"error","message":"AUTH LOGIN -- Cannot read properties of null (reading 'email') with status code (500)","method":"POST","timestamp":"2026-03-19 22:52:22"}
+{"ip":"::1","level":"error","message":"AUTH LOGIN -- Cannot read properties of null (reading 'email') with status code (500)","method":"POST","timestamp":"2026-03-19 22:52:35"}
+{"ip":"::1","level":"error","message":"AUTH LOGIN -- secretOrPrivateKey must have a value with status code (500)","method":"POST","timestamp":"2026-03-19 22:53:03"}
+{"ip":"::1","level":"error","message":"AUTH LOGIN -- secretOrPrivateKey must have a value with status code (500)","method":"POST","timestamp":"2026-03-19 22:57:02"}
+{"ip":"::1","level":"error","message":"AUTH REGISTER -- Attempted to register an existing email: With status code 400 with the email of jhervinmungcal101@gmail.com","method":"POST","timestamp":"2026-03-19 22:57:20"}
+{"ip":"::1","level":"error","message":"AUTH LOGIN -- secretOrPrivateKey must have a value with status code (500)","method":"POST","timestamp":"2026-03-19 22:57:32"}
+{"ip":"::1","level":"error","message":"AUTH LOGIN -- Cannot read properties of null (reading 'email') with status code (500)","method":"POST","timestamp":"2026-03-19 22:57:59"}
+{"ip":"::1","level":"error","message":"AUTH LOGIN -- Cannot read properties of null (reading 'email') with status code (500)","method":"POST","timestamp":"2026-03-19 22:59:35"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-19 23:10:20"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-19 23:10:20"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-19 23:10:20"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-19 23:10:20"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-19 23:10:20"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-19 23:10:20"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-19 23:10:20"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-19 23:10:20"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-19 23:10:20"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-19 23:10:20"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-19 23:10:20"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-19 23:10:20"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-19 23:10:20"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-19 23:10:20"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-19 23:10:20"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-19 23:10:21"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-19 23:10:21"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-19 23:10:21"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-19 23:10:21"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-19 23:10:21"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-19 23:10:21"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-19 23:10:21"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-19 23:10:21"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-19 23:10:21"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-19 23:10:21"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-19 23:10:21"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-19 23:10:21"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-19 23:10:21"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-19 23:10:21"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-19 23:10:21"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-19 23:10:21"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-19 23:10:21"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-19 23:10:21"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-19 23:10:21"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-19 23:10:21"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-19 23:10:21"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-19 23:10:21"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-19 23:10:21"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-19 23:10:21"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-19 23:10:21"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-19 23:10:21"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-19 23:10:21"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-19 23:10:21"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-19 23:10:21"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-19 23:10:21"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-19 23:10:21"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-19 23:10:21"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-19 23:10:21"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-19 23:10:21"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-19 23:10:21"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-19 23:10:21"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-19 23:10:21"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-19 23:10:21"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-19 23:10:21"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-19 23:10:21"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-19 23:10:21"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-19 23:10:21"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-19 23:10:21"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-19 23:10:21"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-19 23:10:21"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-19 23:10:21"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-19 23:10:21"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-19 23:10:21"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-19 23:10:21"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-19 23:10:21"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-19 23:10:21"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-19 23:10:21"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-19 23:10:21"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-19 23:10:21"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-19 23:10:21"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-19 23:10:21"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-19 23:10:21"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-19 23:10:21"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-19 23:10:21"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-19 23:10:21"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-19 23:10:21"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-19 23:10:21"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-19 23:10:21"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-19 23:10:21"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-19 23:10:21"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-19 23:10:21"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-19 23:10:26"}
+{"ip":"::1","level":"error","message":"AUTH LOGIN -- Cannot read properties of null (reading 'email') with status code (500)","method":"POST","timestamp":"2026-03-19 23:10:34"}
+{"ip":"::1","level":"error","message":"AUTH LOGIN -- Cannot read properties of null (reading 'email') with status code (500)","method":"POST","timestamp":"2026-03-19 23:10:40"}
+{"ip":"::1","level":"info","message":"AUTH REGISTER -- Registered the user jhervinmungcal101@gmail.com: With status code 201","method":"POST","timestamp":"2026-03-19 23:14:40"}
+{"ip":"::1","level":"info","message":"AUTH LOGIN -- Email jhervinmungcal101@gmail.com Login Succesfull","method":"POST","timestamp":"2026-03-19 23:14:44"}
+{"ip":"::1","level":"info","message":"AUTH FIRSTLOGIN -- Abraxas checked: is_firsttime = true","method":"GET","timestamp":"2026-03-19 23:14:45"}
+{"ip":"::1","level":"info","message":"AUTH FIRSTLOGIN -- Abraxas checked: is_firsttime = true","method":"GET","timestamp":"2026-03-19 23:15:08"}
+{"ip":"::1","level":"info","message":"AUTH FIRSTLOGIN -- Abraxas checked: is_firsttime = true","method":"GET","timestamp":"2026-03-19 23:15:15"}
+{"ip":"::1","level":"info","message":"AUTH FIRSTLOGIN -- Abraxas checked: is_firsttime = true","method":"GET","timestamp":"2026-03-19 23:15:21"}
+{"ip":"::1","level":"info","message":"AUTH FIRSTLOGIN -- Abraxas checked: is_firsttime = true","method":"GET","timestamp":"2026-03-19 23:16:02"}
+{"ip":"::1","level":"info","message":"AUTH FIRSTLOGIN -- Abraxas checked: is_firsttime = true","method":"GET","timestamp":"2026-03-19 23:18:23"}
+{"ip":"::1","level":"info","message":"AUTH LOGIN -- Email jhervinmungcal101@gmail.com Login Succesfull","method":"POST","timestamp":"2026-03-19 23:18:59"}
+{"ip":"::1","level":"info","message":"AUTH FIRSTLOGIN -- Abraxas checked: is_firsttime = true","method":"GET","timestamp":"2026-03-19 23:18:59"}
+{"ip":"::1","level":"info","message":"AUTH LOGIN -- Email jhervinmungcal101@gmail.com Login Succesfull","method":"POST","timestamp":"2026-03-19 23:20:19"}
+{"ip":"::1","level":"info","message":"AUTH FIRSTLOGIN -- Abraxas checked: is_firsttime = true","method":"GET","timestamp":"2026-03-19 23:20:19"}
+{"ip":"::1","level":"info","message":"AUTH FIRSTLOGIN -- Abraxas checked: is_firsttime = true","method":"GET","timestamp":"2026-03-19 23:21:36"}
+{"ip":"::1","level":"info","message":"AUTH FIRSTLOGIN -- Abraxas checked: is_firsttime = true","method":"GET","timestamp":"2026-03-19 23:23:05"}
+{"ip":"::1","level":"info","message":"AUTH FIRSTLOGIN -- Abraxas checked: is_firsttime = true","method":"GET","timestamp":"2026-03-19 23:28:01"}
+{"ip":"::1","level":"info","message":"AUTH FIRSTLOGIN -- Abraxas checked: is_firsttime = true","method":"GET","timestamp":"2026-03-19 23:28:15"}
+{"ip":"::1","level":"info","message":"AUTH FIRSTLOGIN -- Abraxas checked: is_firsttime = true","method":"GET","timestamp":"2026-03-19 23:28:56"}
+{"ip":"::1","level":"info","message":"AUTH FIRSTLOGIN -- Abraxas checked: is_firsttime = true","method":"GET","timestamp":"2026-03-19 23:29:07"}
+{"ip":"::1","level":"info","message":"AUTH FIRSTLOGIN -- Abraxas checked: is_firsttime = true","method":"GET","timestamp":"2026-03-19 23:29:26"}
+{"ip":"::1","level":"info","message":"AUTH FIRSTLOGIN -- Abraxas checked: is_firsttime = true","method":"GET","timestamp":"2026-03-19 23:29:44"}
+{"ip":"::1","level":"info","message":"AUTH FIRSTLOGIN -- Abraxas checked: is_firsttime = true","method":"GET","timestamp":"2026-03-19 23:34:44"}
+{"ip":"::1","level":"info","message":"AUTH FIRSTLOGIN -- Abraxas checked: is_firsttime = true","method":"GET","timestamp":"2026-03-19 23:43:27"}
+{"ip":"::1","level":"info","message":"AUTH FIRSTLOGIN -- Abraxas checked: is_firsttime = true","method":"GET","timestamp":"2026-03-19 23:43:29"}
+{"ip":"::1","level":"info","message":"AUTH FIRSTLOGIN -- Abraxas checked: is_firsttime = true","method":"GET","timestamp":"2026-03-19 23:45:17"}
+{"ip":"::1","level":"info","message":"AUTH LOGIN -- Email jhervinmungcal101@gmail.com Login Succesfull","method":"POST","timestamp":"2026-03-19 23:54:10"}
+{"ip":"::1","level":"info","message":"AUTH FIRSTLOGIN -- Abraxas checked: is_firsttime = true","method":"GET","timestamp":"2026-03-19 23:54:10"}
+{"ip":"::1","level":"info","message":"AUTH FIRSTLOGIN -- Abraxas checked: is_firsttime = true","method":"GET","timestamp":"2026-03-19 23:54:49"}
+{"ip":"::1","level":"info","message":"AUTH FIRSTLOGIN -- Abraxas checked: is_firsttime = true","method":"GET","timestamp":"2026-03-19 23:57:53"}
+{"ip":"::1","level":"info","message":"AUTH FIRSTLOGIN -- Abraxas checked: is_firsttime = true","method":"GET","timestamp":"2026-03-20 00:00:40"}
+{"ip":"::1","level":"info","message":"AUTH FIRSTLOGIN -- Abraxas checked: is_firsttime = true","method":"GET","timestamp":"2026-03-20 00:03:10"}
+{"ip":"::1","level":"info","message":"AUTH FIRSTLOGIN -- Abraxas checked: is_firsttime = true","method":"GET","timestamp":"2026-03-20 00:04:19"}
+{"ip":"::1","level":"info","message":"AUTH LOGIN -- Email jhervinmungcal101@gmail.com Login Succesfull","method":"POST","timestamp":"2026-03-20 00:06:42"}
+{"ip":"::1","level":"info","message":"AUTH FIRSTLOGIN -- Abraxas checked: is_firsttime = true","method":"GET","timestamp":"2026-03-20 00:06:43"}
+{"ip":"::1","level":"info","message":"AUTH FIRSTLOGIN -- Abraxas checked: is_firsttime = true","method":"GET","timestamp":"2026-03-20 00:10:09"}
+{"ip":"::1","level":"info","message":"AUTH FIRSTLOGIN -- Abraxas checked: is_firsttime = true","method":"GET","timestamp":"2026-03-20 00:10:29"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-20 00:13:56"}
+{"ip":"::1","level":"info","message":"AUTH FIRSTLOGIN -- Abraxas checked: is_firsttime = true","method":"GET","timestamp":"2026-03-20 00:14:17"}
+{"ip":"::1","level":"info","message":"AUTH LOGIN -- Email jhervinmungcal101@gmail.com Login Succesfull","method":"POST","timestamp":"2026-03-20 00:14:48"}
+{"ip":"::1","level":"info","message":"AUTH FIRSTLOGIN -- Abraxas checked: is_firsttime = true","method":"GET","timestamp":"2026-03-20 00:14:48"}
+{"ip":"::1","level":"info","message":"AUTH FIRSTLOGIN -- Abraxas checked: is_firsttime = true","method":"GET","timestamp":"2026-03-20 00:22:08"}
+{"ip":"::1","level":"info","message":"AUTH FIRSTLOGIN -- Abraxas checked: is_firsttime = true","method":"GET","timestamp":"2026-03-20 00:29:22"}
+{"ip":"::1","level":"info","message":"AUTH FIRSTLOGIN -- Abraxas checked: is_firsttime = true","method":"GET","timestamp":"2026-03-20 00:29:54"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-20 00:30:40"}
+{"ip":"::1","level":"info","message":"AUTH LOGIN -- Email jhervinmungcal101@gmail.com Login Succesfull","method":"POST","timestamp":"2026-03-20 00:30:54"}
+{"ip":"::1","level":"info","message":"AUTH FIRSTLOGIN -- Abraxas checked: is_firsttime = true","method":"GET","timestamp":"2026-03-20 00:30:55"}
+{"ip":"::1","level":"info","message":"AUTH FIRSTLOGIN -- Abraxas checked: is_firsttime = true","method":"GET","timestamp":"2026-03-20 00:34:59"}
+{"ip":"::1","level":"info","message":"AUTH FIRSTLOGIN -- Abraxas checked: is_firsttime = true","method":"GET","timestamp":"2026-03-20 00:39:13"}
+{"ip":"::1","level":"info","message":"AUTH FIRSTLOGIN -- Abraxas checked: is_firsttime = true","method":"GET","timestamp":"2026-03-20 00:39:21"}
+{"ip":"::1","level":"info","message":"AUTH FIRSTLOGIN -- Abraxas checked: is_firsttime = true","method":"GET","timestamp":"2026-03-20 00:44:59"}
+{"ip":"::1","level":"info","message":"AUTH FIRSTLOGIN -- Abraxas checked: is_firsttime = true","method":"GET","timestamp":"2026-03-20 00:46:32"}
+{"ip":"::1","level":"info","message":"AUTH FIRSTLOGIN -- Abraxas checked: is_firsttime = true","method":"GET","timestamp":"2026-03-20 00:47:54"}
+{"ip":"::1","level":"info","message":"AUTH FIRSTLOGIN -- Abraxas checked: is_firsttime = true","method":"GET","timestamp":"2026-03-20 01:05:10"}
+{"ip":"::1","level":"info","message":"AUTH FIRSTLOGIN -- Abraxas checked: is_firsttime = true","method":"GET","timestamp":"2026-03-20 01:06:33"}
+{"ip":"::1","level":"info","message":"AUTH FIRSTLOGIN -- Abraxas checked: is_firsttime = true","method":"GET","timestamp":"2026-03-20 01:08:42"}
+{"ip":"::1","level":"info","message":"AUTH FIRSTLOGIN -- Abraxas checked: is_firsttime = true","method":"GET","timestamp":"2026-03-20 01:09:10"}
+{"ip":"::1","level":"info","message":"AUTH FIRSTLOGIN -- Abraxas checked: is_firsttime = true","method":"GET","timestamp":"2026-03-20 01:09:35"}
+{"ip":"::1","level":"info","message":"AUTH LOGIN -- Email jhervinmungcal101@gmail.com Login Succesfull","method":"POST","timestamp":"2026-03-20 01:12:22"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-20 01:12:30"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-20 01:12:53"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-20 01:12:54"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-20 01:12:54"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-20 01:12:54"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-20 01:12:54"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-20 01:12:54"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-20 01:12:54"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-20 01:12:55"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-20 01:12:58"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-20 01:13:00"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-20 01:13:03"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-20 01:13:05"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-20 01:13:05"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-20 01:13:05"}
+{"ip":"::1","level":"info","message":"AUTH LOGIN -- Email jhervinmungcal101@gmail.com Login Succesfull","method":"POST","timestamp":"2026-03-20 01:14:36"}
+{"ip":"::1","level":"info","message":"AUTH FIRSTLOGIN -- Abraxas checked: is_firsttime = true","method":"GET","timestamp":"2026-03-20 01:14:36"}
+{"ip":"::1","level":"info","message":"AUTH FIRSTLOGIN -- Abraxas checked: is_firsttime = true","method":"GET","timestamp":"2026-03-20 01:15:47"}
+{"ip":"::1","level":"info","message":"AUTH FIRSTLOGIN -- Abraxas checked: is_firsttime = true","method":"GET","timestamp":"2026-03-20 01:59:04"}
+{"ip":"::1","level":"info","message":"AUTH FIRSTLOGIN -- Abraxas checked: is_firsttime = true","method":"GET","timestamp":"2026-03-20 01:59:08"}
+{"ip":"::1","level":"info","message":"AUTH FIRSTLOGIN -- Abraxas checked: is_firsttime = true","method":"GET","timestamp":"2026-03-20 02:01:02"}
+{"ip":"::1","level":"info","message":"AUTH FIRSTLOGIN -- Abraxas checked: is_firsttime = true","method":"GET","timestamp":"2026-03-20 02:02:02"}
+{"ip":"::1","level":"info","message":"AUTH FIRSTLOGIN -- Abraxas checked: is_firsttime = true","method":"GET","timestamp":"2026-03-20 02:05:20"}
+{"ip":"::1","level":"info","message":"AUTH FIRSTLOGIN -- Abraxas checked: is_firsttime = true","method":"GET","timestamp":"2026-03-20 02:14:30"}
+{"level":"info","message":"AUTH FIRSTLOGIN -- Abraxas checked: is_firsttime = true","method":"GET","timestamp":"2026-03-20 02:39:56"}
+{"ip":"::1","level":"info","message":"AUTH FIRSTLOGIN -- Abraxas checked: is_firsttime = true","method":"GET","timestamp":"2026-03-20 02:44:08"}
+{"ip":"::1","level":"info","message":"AUTH LOGIN -- Email jhervinmungcal101@gmail.com Login Succesfull","method":"POST","timestamp":"2026-03-20 02:48:51"}
+{"ip":"::1","level":"info","message":"AUTH FIRSTLOGIN -- Abraxas checked: is_firsttime = true","method":"GET","timestamp":"2026-03-20 02:48:53"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-20 02:55:11"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-20 02:55:11"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-20 02:55:11"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-20 02:55:11"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-20 02:55:11"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-20 02:55:11"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-20 02:55:11"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-20 02:55:11"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-20 02:55:11"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-20 02:55:11"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-20 02:55:11"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-20 02:55:11"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-20 02:55:12"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-20 02:55:12"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-20 02:55:12"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-20 02:55:12"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-20 02:55:13"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-20 02:55:13"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-20 02:55:13"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-20 02:55:13"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-20 02:55:13"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-20 02:55:13"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-20 02:55:13"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-20 02:55:13"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-20 02:55:13"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-20 02:55:13"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-20 02:55:13"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-20 02:55:13"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-20 02:55:13"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-20 02:55:13"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-20 02:55:13"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-20 02:55:14"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-20 02:55:14"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-20 02:55:14"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-20 02:55:14"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-20 02:55:14"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-20 02:55:14"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-20 02:55:14"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-20 02:55:14"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-20 02:55:14"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-20 02:55:14"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-20 02:55:14"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-20 02:55:14"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-20 02:55:14"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-20 02:55:15"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-20 02:55:18"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-20 02:55:21"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-20 02:55:24"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-20 02:55:27"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-20 02:55:31"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-20 02:55:33"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-20 02:55:36"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-20 02:55:39"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-20 02:55:42"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-20 02:55:45"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-20 02:55:48"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-20 02:55:51"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-20 02:55:54"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-20 02:55:57"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-20 02:56:00"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-20 02:56:03"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-20 02:56:06"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-20 02:56:09"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-20 02:56:12"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-20 02:56:15"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-20 02:56:18"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-20 02:56:21"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-20 02:56:24"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-20 02:56:27"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-20 02:56:30"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-20 02:56:33"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-20 02:56:36"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-20 02:56:39"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-20 02:56:42"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-20 02:56:45"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-20 02:56:48"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-20 02:56:51"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-20 02:56:54"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-20 02:56:57"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-20 02:57:00"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-20 02:57:03"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-20 02:57:06"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-20 02:57:09"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-20 02:57:12"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-20 02:57:15"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-20 02:57:18"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-20 02:57:21"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-20 02:57:24"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-20 02:57:27"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-20 02:57:30"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-20 02:57:33"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-20 02:57:36"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-20 03:01:11"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-20 03:01:42"}
+{"ip":"::1","level":"info","message":"AUTH LOGIN -- Email jhervinmungcal101@gmail.com Login Succesfull","method":"POST","timestamp":"2026-03-20 03:01:52"}
+{"ip":"::1","level":"info","message":"AUTH FIRSTLOGIN -- Abraxas checked: is_firsttime = true","method":"GET","timestamp":"2026-03-20 03:01:52"}
+{"ip":"::1","level":"info","message":"AUTH FIRSTLOGIN -- Abraxas checked: is_firsttime = true","method":"GET","timestamp":"2026-03-20 03:07:22"}
+{"ip":"::1","level":"info","message":"AUTH FIRSTLOGIN -- Abraxas checked: is_firsttime = true","method":"GET","timestamp":"2026-03-20 03:18:34"}
+{"ip":"::1","level":"info","message":"AUTH FIRSTLOGIN -- Abraxas checked: is_firsttime = true","method":"GET","timestamp":"2026-03-20 03:20:06"}
+{"ip":"::1","level":"info","message":"AUTH FIRSTLOGIN -- Abraxas checked: is_firsttime = true","method":"GET","timestamp":"2026-03-20 03:23:40"}
 {"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-18 09:45:25"}
 {"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-18 18:55:26"}
 {"ip":"::1","level":"info","message":"AUTH FIRSTLOGIN -- LotharKlaue checked: is_firsttime = true","method":"GET","timestamp":"2026-03-18 18:55:42"}

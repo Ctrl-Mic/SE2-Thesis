@@ -43,5 +43,17 @@
 {"ip":"::1","level":"error","message":"ROOM CREATE -- Attempted to create a room with an existing name","method":"POST","timestamp":"2026-03-18 09:00:37"}
 {"ip":"::ffff:127.0.0.1","level":"error","message":"ROOM CREATE -- Attempted to create a room with an existing name","method":"POST","timestamp":"2026-03-18 09:17:44"}
 {"ip":"::1","level":"error","message":"ROOM CREATE -- Attempted to create a room with an existing name","method":"POST","timestamp":"2026-03-18 09:28:08"}
+{"ip":"::1","level":"error","message":"AUTH LOGIN -- secretOrPrivateKey must have a value with status code (500)","method":"POST","timestamp":"2026-03-19 22:51:18"}
+{"ip":"::1","level":"error","message":"AUTH LOGIN -- secretOrPrivateKey must have a value with status code (500)","method":"POST","timestamp":"2026-03-19 22:51:28"}
+{"ip":"::1","level":"error","message":"AUTH LOGIN -- Cannot read properties of null (reading 'email') with status code (500)","method":"POST","timestamp":"2026-03-19 22:52:22"}
+{"ip":"::1","level":"error","message":"AUTH LOGIN -- Cannot read properties of null (reading 'email') with status code (500)","method":"POST","timestamp":"2026-03-19 22:52:35"}
+{"ip":"::1","level":"error","message":"AUTH LOGIN -- secretOrPrivateKey must have a value with status code (500)","method":"POST","timestamp":"2026-03-19 22:53:03"}
+{"ip":"::1","level":"error","message":"AUTH LOGIN -- secretOrPrivateKey must have a value with status code (500)","method":"POST","timestamp":"2026-03-19 22:57:02"}
+{"ip":"::1","level":"error","message":"AUTH REGISTER -- Attempted to register an existing email: With status code 400 with the email of jhervinmungcal101@gmail.com","method":"POST","timestamp":"2026-03-19 22:57:20"}
+{"ip":"::1","level":"error","message":"AUTH LOGIN -- secretOrPrivateKey must have a value with status code (500)","method":"POST","timestamp":"2026-03-19 22:57:32"}
+{"ip":"::1","level":"error","message":"AUTH LOGIN -- Cannot read properties of null (reading 'email') with status code (500)","method":"POST","timestamp":"2026-03-19 22:57:59"}
+{"ip":"::1","level":"error","message":"AUTH LOGIN -- Cannot read properties of null (reading 'email') with status code (500)","method":"POST","timestamp":"2026-03-19 22:59:35"}
+{"ip":"::1","level":"error","message":"AUTH LOGIN -- Cannot read properties of null (reading 'email') with status code (500)","method":"POST","timestamp":"2026-03-19 23:10:34"}
+{"ip":"::1","level":"error","message":"AUTH LOGIN -- Cannot read properties of null (reading 'email') with status code (500)","method":"POST","timestamp":"2026-03-19 23:10:40"}
 {"ip":"::ffff:127.0.0.1","level":"error","message":"AUTH LOGIN -- User trizxd123@gmail.com password do not match with status code (400)","method":"POST","timestamp":"2026-03-19 19:38:04"}
 {"ip":"::ffff:127.0.0.1","level":"error","message":"AUTH LOGIN -- User trizxd123@gmail.com password do not match with status code (400)","method":"POST","timestamp":"2026-03-19 19:38:09"}

@@ -713,35 +713,3 @@
 {"ip":"::1","level":"info","message":"AUTH FIRSTLOGIN -- LotharKlaue checked: is_firsttime = true","method":"GET","timestamp":"2026-03-18 09:44:19"}
 {"ip":"::1","level":"info","message":"AUTH FIRSTLOGIN -- LotharKlaue checked: is_firsttime = true","method":"GET","timestamp":"2026-03-18 09:44:29"}
 {"ip":"::1","level":"info","message":"AUTH FIRSTLOGIN -- LotharKlaue checked: is_firsttime = true","method":"GET","timestamp":"2026-03-18 09:44:35"}
-{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-18 09:45:25"}
-{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-18 18:55:26"}
-{"ip":"::1","level":"info","message":"AUTH FIRSTLOGIN -- LotharKlaue checked: is_firsttime = true","method":"GET","timestamp":"2026-03-18 18:55:42"}
-{"ip":"::1","level":"info","message":"ROOM CREATE -- Room added asdasd: With status code 201","method":"POST","timestamp":"2026-03-18 18:56:16"}
-{"ip":"::1","level":"info","message":"AUTH FIRSTLOGIN -- LotharKlaue checked: is_firsttime = true","method":"GET","timestamp":"2026-03-18 18:57:08"}
-{"ip":"::1","level":"info","message":"AUTH FIRSTLOGIN -- LotharKlaue checked: is_firsttime = true","method":"GET","timestamp":"2026-03-18 18:57:51"}
-{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-18 19:00:55"}
-{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-18 19:00:58"}
-{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-18 19:01:04"}
-{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-18 19:01:41"}
-{"ip":"::ffff:127.0.0.1","level":"info","message":"ROOM CREATE -- Room added asasdasdad: With status code 201","method":"POST","timestamp":"2026-03-18 19:01:46"}
-{"ip":"::1","level":"info","message":"AUTH REGISTER -- Registered the user asd@gmail.com: With status code 201","method":"POST","timestamp":"2026-03-18 19:02:02"}
-{"ip":"::1","level":"info","message":"AUTH LOGIN -- Email asd@gmail.com Login Succesfull","method":"POST","timestamp":"2026-03-18 19:02:07"}
-{"ip":"::1","level":"info","message":"AUTH FIRSTLOGIN -- Lothar checked: is_firsttime = true","method":"GET","timestamp":"2026-03-18 19:02:07"}
-{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-18 19:12:40"}
-{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-18 19:14:27"}
-{"ip":"::1","level":"info","message":"AUTH LOGIN -- Email trizxd123@gmail.com Login Succesfull","method":"POST","timestamp":"2026-03-18 19:14:39"}
-{"ip":"::1","level":"info","message":"ROOM CREATE -- Room added Room 307: With status code 201","method":"POST","timestamp":"2026-03-18 19:14:46"}
-{"ip":"::1","level":"info","message":"AUTH LOGIN -- Email asd@gmail.com Login Succesfull","method":"POST","timestamp":"2026-03-18 19:14:57"}
-{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-19 18:19:33"}
-{"ip":"::1","level":"info","message":"AUTH LOGIN -- Email trizxd123@gmail.com Login Succesfull","method":"POST","timestamp":"2026-03-19 18:19:43"}
-{"ip":"::1","level":"info","message":"ROOM CREATE -- Room added Room 111: With status code 201","method":"POST","timestamp":"2026-03-19 18:19:50"}
-{"ip":"::1","level":"info","message":"AUTH LOGIN -- Email asd@gmail.com Login Succesfull","method":"POST","timestamp":"2026-03-19 18:19:58"}
-{"ip":"::1","level":"info","message":"AUTH LOGIN -- Email trizxd123@gmail.com Login Succesfull","method":"POST","timestamp":"2026-03-19 18:21:23"}
-{"ip":"::1","level":"info","message":"AUTH LOGIN -- Email mamamo@gmail.com Login Succesfull","method":"POST","timestamp":"2026-03-19 18:21:33"}
-{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-19 18:28:27"}
-{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-19 19:37:50"}
-{"ip":"::ffff:127.0.0.1","level":"error","message":"AUTH LOGIN -- User trizxd123@gmail.com password do not match with status code (400)","method":"POST","timestamp":"2026-03-19 19:38:04"}
-{"ip":"::ffff:127.0.0.1","level":"error","message":"AUTH LOGIN -- User trizxd123@gmail.com password do not match with status code (400)","method":"POST","timestamp":"2026-03-19 19:38:09"}
-{"ip":"::ffff:127.0.0.1","level":"info","message":"AUTH LOGIN -- Email trizxd123@gmail.com Login Succesfull","method":"POST","timestamp":"2026-03-19 19:38:14"}
-{"ip":"::1","level":"info","message":"ROOM CREATE -- Room added Room 101: With status code 201","method":"POST","timestamp":"2026-03-19 19:38:28"}
-{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-19 20:55:02"}
