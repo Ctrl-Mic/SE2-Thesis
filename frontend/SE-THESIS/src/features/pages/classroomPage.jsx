@@ -8,10 +8,20 @@ import { toast } from "sonner";
 import { addRoom, getRooms } from "../../shared/services/roomService.js";
 import { useNavigate } from "react-router-dom";
 import { socket } from "../../shared/services/socketService.js";
+import KebabPullout from "../../shared/components/ui/kebabPullout.jsx";
+import EditClassroom from "../../shared/components/ui/editClassroom.jsx";
+import EditSchedule from "../../shared/components/ui/editSchedule.jsx";
+import ViewClassroom from "../../shared/components/ui/viewClassroom.jsx";
 
 export default function classroomPage() {
   const navigate = useNavigate();
   const [rooms, setRooms] = useState([]);
+  const [kebabAnchorEl, setKebabAnchorEl] = useState(null);
+  const [selectedRoomId, setSelectedRoomId] = useState(null);
+  const [selectedRoomName, setSelectedRoomName] = useState(null);
+  const [editModalOpen, setEditModalOpen] = useState(false);
+  const [editScheduleModalOpen, setEditScheduleModalOpen] = useState(false);
+  const [viewModalOpen, setViewModalOpen] = useState(false);
   console.log(rooms);
   socket.on("connect", () => console.log("Socket connected!", socket.id));
 
@@ -27,6 +37,32 @@ export default function classroomPage() {
     if (errors.cr_name) {
       toast.error(errors.cr_name.message);
     }
+  };
+
+  const handleCardClick = (roomId, roomName) => {
+    setSelectedRoomId(roomId);
+    setSelectedRoomName(roomName);
+    setViewModalOpen(true);
+  };
+
+  const handleKebabClick = (event, roomId, roomName) => {
+    event.stopPropagation();
+    setKebabAnchorEl(event.currentTarget);
+    setSelectedRoomId(roomId);
+    setSelectedRoomName(roomName);
+  };
+
+  const handleKebabClose = () => {
+    setKebabAnchorEl(null);
+    setSelectedRoomId(null);
+  };
+
+  const handleEditClassroom = () => {
+    setEditModalOpen(true);
+  };
+
+  const handleEditSchedule = () => {
+    setEditScheduleModalOpen(true);
   };
 
   const onSubmit = async (data) => {
@@ -95,7 +131,8 @@ export default function classroomPage() {
         {rooms.map((room) => (
           <div
             key={room._id}
-            className="relative overflow-clip bg-[#DFDEDA] shadow-outside-dropshadow aspect-3/2 rounded-lg hover:scale-101 duration-100 transition-all flex flex-col"
+            onClick={() => handleCardClick(room._id, room.room_name)}
+            className="relative overflow-clip bg-[#DFDEDA] shadow-outside-dropshadow aspect-3/2 rounded-lg hover:scale-101 duration-100 transition-all flex flex-col cursor-pointer"
           >
             <div className="bg-[#DFDEDA] w-full h-[70%] shadow-inner shadow-black/10 flex items-center justify-center">
               <ListVideo size={60} color="#A1A2A6" />
@@ -104,9 +141,12 @@ export default function classroomPage() {
               <div>
                 <p className="text-subtitle text-[#4F4F4F]">{room.room_name}</p>
               </div>
-              <div>
+              <button
+                onClick={(e) => handleKebabClick(e, room._id, room.room_name)}
+                className="cursor-pointer hover:scale-110 transition-transform duration-150 p-2 rounded-full hover:bg-black/10"
+              >
                 <Ellipsis size={50} color="#A1A2A6" />
-              </div>
+              </button>
             </div>
           </div>
         ))}
@@ -166,6 +206,33 @@ export default function classroomPage() {
           </div>
         </div>
       </Popover>
+
+      <KebabPullout
+        open={Boolean(kebabAnchorEl)}
+        anchorEl={kebabAnchorEl}
+        onClose={handleKebabClose}
+        onEditClassroom={handleEditClassroom}
+        onEditSchedule={handleEditSchedule}
+      />
+
+      <EditClassroom
+        open={editModalOpen}
+        onClose={() => setEditModalOpen(false)}
+        roomId={selectedRoomId}
+      />
+
+      <EditSchedule
+        open={editScheduleModalOpen}
+        onClose={() => setEditScheduleModalOpen(false)}
+        roomId={selectedRoomId}
+      />
+
+      <ViewClassroom
+        open={viewModalOpen}
+        onClose={() => setViewModalOpen(false)}
+        roomId={selectedRoomId}
+        roomName={selectedRoomName}
+      />
     </div>
   );
 }
