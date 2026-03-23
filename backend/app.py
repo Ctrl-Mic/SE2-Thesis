@@ -24,20 +24,24 @@ belief = {
 
 DT = 3.0
 
+# -------------------------------
+# NEW: Estimated occupancy (core memory)
+# -------------------------------
+estimated_occupancy = 0
+
 app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-        "http://localhost:3000",  # React (CRA)
-        "http://localhost:5173",  # Vite
+        "http://localhost:3000",
+        "http://localhost:5173",
     ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
 
-# Serve images to frontend
 app.mount("/results", StaticFiles(directory="results"), name="results")
 
 model = YOLO("./model/yolov8n.pt")
@@ -48,6 +52,8 @@ previous_centers = []
 @app.post("/detect")
 async def detect_objects(file: UploadFile = File(...)):
     global previous_centers
+    global belief
+    global estimated_occupancy
 
     try:
         contents = await file.read()
@@ -60,13 +66,39 @@ async def detect_objects(file: UploadFile = File(...)):
 
         results = model(image)
 
-        # Extract features
+        # -------------------------------
+        # Feature extraction
+        # -------------------------------
         features, centers = extract_features(results, previous_centers)
         previous_centers = centers
-        feature_history.append(features)
-        
-        global belief
 
+        # -------------------------------
+        # NEW: Update estimated occupancy
+        # -------------------------------
+
+        # ENTRY → increase count
+        if features["entry_count"] > 0:
+            estimated_occupancy += features["entry_count"]
+
+        # EXIT → decrease count
+        if features["exit_count"] > 0:
+            estimated_occupancy -= features["exit_count"]
+
+        # Clamp to 0 (no negative people)
+        estimated_occupancy = max(0, estimated_occupancy)
+
+        # Fallback: if we detect more people than estimated
+        if features["people_count"] > estimated_occupancy:
+            estimated_occupancy = features["people_count"]
+
+        # Inject into features for inference
+        features["estimated_occupancy"] = estimated_occupancy
+
+        feature_history.append(features)
+
+        # -------------------------------
+        # Inference
+        # -------------------------------
         belief = update_belief(
             belief,
             features,
@@ -76,10 +108,11 @@ async def detect_objects(file: UploadFile = File(...)):
 
         state = infer_state(belief)
 
-        # Annotated frame
+        # -------------------------------
+        # Visualization
+        # -------------------------------
         annotated_frame = results[0].plot()
 
-        # Draw exit zones
         for zone in EXIT_ZONES:
             x1, y1, x2, y2 = zone
 
@@ -101,7 +134,6 @@ async def detect_objects(file: UploadFile = File(...)):
                 2
             )
 
-        # Save image with unique name
         os.makedirs("./results", exist_ok=True)
 
         filename = f"{uuid.uuid4()}.jpg"
@@ -109,12 +141,8 @@ async def detect_objects(file: UploadFile = File(...)):
 
         cv2.imwrite(output_path, annotated_frame)
 
-        # -------------------------------
-        # Maintain rolling image history
-        # -------------------------------
         image_history.append(filename)
 
-        # Delete old images if over limit
         if len(image_history) == MAX_HISTORY:
             existing_files = set(os.listdir("./results"))
             valid_files = set(image_history)
@@ -126,10 +154,10 @@ async def detect_objects(file: UploadFile = File(...)):
                     except:
                         pass
 
-        # Public URL (IMPORTANT)
         image_url = f"http://localhost:8000/results/{filename}"
 
         print(f"Features: {features}")
+        print(f"Estimated Occupancy: {estimated_occupancy}")
 
         return {
             "message": "Detection complete",

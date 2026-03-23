@@ -22,6 +22,15 @@ def intersects(box, zone):
     )
 
 
+# -------------------------------
+# NEW: Determine if center is inside zone
+# -------------------------------
+def is_inside_zone(center, zone):
+    x, y = center
+    x1, y1, x2, y2 = zone
+    return x1 <= x <= x2 and y1 <= y <= y2
+
+
 def compute_motion(current_centers, prev_centers):
     if not prev_centers or not current_centers:
         return 0.0
@@ -37,14 +46,16 @@ def compute_motion(current_centers, prev_centers):
 
     motion = float(np.mean(distances))
 
-    # normalize
     return min(motion / 50.0, 1.0)
 
 
+# -------------------------------
+# MAIN FEATURE EXTRACTION
+# -------------------------------
 def extract_features(results, previous_centers):
     """
-    Extract motion, people count, exit activity and confidence
-    from YOLO detection results
+    Extract motion, people count, exit activity,
+    AND direction-based entry/exit counts
     """
 
     boxes = results[0].boxes.xyxy.cpu().numpy()
@@ -74,16 +85,42 @@ def extract_features(results, previous_centers):
 
     motion_level = compute_motion(centers, previous_centers)
 
+    # -------------------------------
+    # EXISTING: Exit activity (boolean)
+    # -------------------------------
     exit_activity = any(
         intersects(box, zone)
         for box in people_boxes
         for zone in EXIT_ZONES
     )
 
+    # -------------------------------
+    # NEW: Direction detection
+    # -------------------------------
+    entry_count = 0
+    exit_count = 0
+
+    # NOTE: This is approximate matching (no tracking IDs yet)
+    for curr in centers:
+        for prev in previous_centers:
+            for zone in EXIT_ZONES:
+                prev_inside = is_inside_zone(prev, zone)
+                curr_inside = is_inside_zone(curr, zone)
+
+                # OUTSIDE → INSIDE = ENTRY
+                if not prev_inside and curr_inside:
+                    entry_count += 1
+
+                # INSIDE → OUTSIDE = EXIT
+                elif prev_inside and not curr_inside:
+                    exit_count += 1
+
     features = {
         "people_count": people_count,
         "motion_level": motion_level,
         "exit_activity": exit_activity,
+        "entry_count": entry_count,   
+        "exit_count": exit_count,     
         "avg_confidence": avg_confidence
     }
 

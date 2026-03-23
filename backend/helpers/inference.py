@@ -68,6 +68,7 @@ def enhance_with_history(obs, history):
     # If someone was seen recently, assume still inside
     # -------------------------------
     recent_people = any(f["people_count"] > 0 for f in recent)
+    
 
     enhanced = obs.copy()
 
@@ -96,7 +97,7 @@ def enhance_with_history(obs, history):
 # - Camera sees only exit area → absence ≠ empty
 # -------------------------------
 def observation_likelihood(obs):
-    people = obs["people_count"]
+    people = obs.get("estimated_occupancy", obs["people_count"])
     motion = obs["motion_level"]
     exit_act = obs["exit_activity"]
     trend_leaving = obs.get("trend_leaving", False)
