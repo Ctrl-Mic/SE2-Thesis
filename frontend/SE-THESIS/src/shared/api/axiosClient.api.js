@@ -1,5 +1,4 @@
 import axios from "axios";
-
 // ?So we make an axios client here so that we have one client handling all the request for the server.
 // ?Meaning we dont need to always call the url and create the header everytime we request to server. We
 // ?just call this then indicate in which url are we going.
@@ -10,7 +9,7 @@ import axios from "axios";
 // ?server
 
 const axiosClient = axios.create({
-  baseURL: import.meta.env.VITE_SERVER_URL,
+  baseURL: "http://localhost:4000",
   headers: {
     "Content-Type": "application/json",
   },

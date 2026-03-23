@@ -11,6 +11,7 @@ export default function dashboard() {
   const [showGuide, setShowGuide] = useState(false);
   const { rooms } = useRooms();
   const emptyRooms = rooms.filter((room) => room.room_occupants > 0).length;
+  const vacantRoom = rooms.filter((room) => room.room_occupants === 0).length;
   socket.on("connect", () => console.log("Socket connected!", socket.id));
   
   useEffect(() => {
@@ -58,7 +59,7 @@ export default function dashboard() {
           <div className="flex flex-col items-start gap-4 primary-text">
             <h2 className="text-title">Vacant Rooms</h2>
             <div className="w-[20vw] aspect-video rounded-2xl shadow-outside-dropshadow flex justify-center items-center text-header">
-              {rooms.length}
+              {vacantRoom}
             </div>
           </div>
           <div className="flex flex-col w-full h-full items-start gap-4 primary-text">

@@ -1570,3 +1570,88 @@
 {"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69bbcdc59739ff06f44a479d'),\n  room_name: 'Room 111',\n  room_owner: {\n    _id: new ObjectId('69b74c3dc5af98f8629f88d6'),\n    first_name: 'LotharKlaue'\n  },\n  room_occupants: 0,\n  __v: 0\n},{\n  _id: new ObjectId('69bbe034dc3da1b81c622710'),\n  room_name: 'Room 101',\n  room_owner: {\n    _id: new ObjectId('69b74c3dc5af98f8629f88d6'),\n    first_name: 'LotharKlaue'\n  },\n  room_occupants: 0,\n  __v: 0\n},{\n  _id: new ObjectId('69bd1837104413298d7213e1'),\n  room_name: 'Room 307',\n  room_owner: {\n    _id: new ObjectId('69b74c3dc5af98f8629f88d6'),\n    first_name: 'LotharKlaue'\n  },\n  room_occupants: 0,\n  __v: 0\n},{\n  _id: new ObjectId('69bd233938f6e3b0069d08c9'),\n  room_name: 'asdasdasdasd',\n  room_owner: {\n    _id: new ObjectId('69b74c3dc5af98f8629f88d6'),\n    first_name: 'LotharKlaue'\n  },\n  room_occupants: 0,\n  __v: 0\n},{\n  _id: new ObjectId('69bd233d38f6e3b0069d08d0'),\n  room_name: 'asdasdasdasdasdasd',\n  room_owner: {\n    _id: new ObjectId('69b74c3dc5af98f8629f88d6'),\n    first_name: 'LotharKlaue'\n  },\n  room_occupants: 0,\n  __v: 0\n},{\n  _id: new ObjectId('69bd234038f6e3b0069d08d5'),\n  room_name: 'asdasdasdasdasdasdasdasd',\n  room_owner: {\n    _id: new ObjectId('69b74c3dc5af98f8629f88d6'),\n    first_name: 'LotharKlaue'\n  },\n  room_occupants: 0,\n  __v: 0\n},{\n  _id: new ObjectId('69bfd195e63c408f5d7ed864'),\n  room_name: 'Room 3079',\n  room_owner: {\n    _id: new ObjectId('69b74c3dc5af98f8629f88d6'),\n    first_name: 'LotharKlaue'\n  },\n  room_occupants: 0,\n  __v: 0\n},{\n  _id: new ObjectId('69bfd3cde63c408f5d7edb7b'),\n  room_name: 'asdasdasda',\n  room_owner: {\n    _id: new ObjectId('69b74c3dc5af98f8629f88d6'),\n    first_name: 'LotharKlaue'\n  },\n  room_occupants: 0,\n  __v: 0\n},{\n  _id: new ObjectId('69bfd3d0e63c408f5d7edb80'),\n  room_name: 'aaaaaaa',\n  room_owner: {\n    _id: new ObjectId('69b74c3dc5af98f8629f88d6'),\n    first_name: 'LotharKlaue'\n  },\n  room_occupants: 0,\n  __v: 0\n},{\n  _id: new ObjectId('69bfd3f1e63c408f5d7edb95'),\n  room_name: 'bbbbbbbbb',\n  room_owner: {\n    _id: new ObjectId('69b74c3dc5af98f8629f88d6'),\n    first_name: 'LotharKlaue'\n  },\n  room_occupants: 0,\n  __v: 0\n},{\n  _id: new ObjectId('69bfd72ee63c408f5d7edbfa'),\n  room_name: 'bgbg',\n  room_owner: {\n    _id: new ObjectId('69b74c3dc5af98f8629f88d6'),\n    first_name: 'LotharKlaue'\n  },\n  room_occupants: 0,\n  __v: 0\n},{\n  _id: new ObjectId('69bfd733e63c408f5d7edbff'),\n  room_name: 'lll',\n  room_owner: {\n    _id: new ObjectId('69b74c3dc5af98f8629f88d6'),\n    first_name: 'LotharKlaue'\n  },\n  room_occupants: 0,\n  __v: 0\n},{\n  _id: new ObjectId('69bfd761e63c408f5d7edc19'),\n  room_name: 'hi',\n  room_owner: {\n    _id: new ObjectId('69b74c3dc5af98f8629f88d6'),\n    first_name: 'LotharKlaue'\n  },\n  room_occupants: 0,\n  __v: 0\n}","timestamp":"2026-03-22 19:54:26"}
 {"ip":"::1","level":"info","message":"ROOM CREATE -- Room added asasdasdadds: With status code 201","method":"POST","timestamp":"2026-03-22 19:54:33"}
 {"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-22 19:55:45"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-18 14:05:59"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-18 14:10:48"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-18 14:11:30"}
+{"ip":"::1","level":"error","message":"AUTH LOGIN -- Cannot read properties of null (reading 'email') with status code (500)","method":"POST","timestamp":"2026-03-18 14:13:59"}
+{"ip":"::1","level":"info","message":"AUTH REGISTER -- Registered the user mamamo@gmail.com: With status code 201","method":"POST","timestamp":"2026-03-18 14:14:34"}
+{"ip":"::1","level":"info","message":"AUTH LOGIN -- Email mamamo@gmail.com Login Succesfull","method":"POST","timestamp":"2026-03-18 14:14:46"}
+{"ip":"::1","level":"info","message":"AUTH FIRSTLOGIN -- mamamo checked: is_firsttime = true","method":"GET","timestamp":"2026-03-18 14:14:46"}
+{"ip":"::1","level":"info","message":"AUTH LOGIN -- Email mamamo@gmail.com Login Succesfull","method":"POST","timestamp":"2026-03-18 14:16:39"}
+{"ip":"::1","level":"info","message":"AUTH FIRSTLOGIN -- mamamo checked: is_firsttime = true","method":"GET","timestamp":"2026-03-18 14:16:41"}
+{"ip":"::1","level":"info","message":"ROOM CREATE -- Room added RoomBurta: With status code 201","method":"POST","timestamp":"2026-03-18 14:19:32"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-18 14:22:48"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-18 14:23:46"}
+{"ip":"::1","level":"info","message":"AUTH LOGIN -- Email trizXD123@gmail.com Login Succesfull","method":"POST","timestamp":"2026-03-18 14:24:08"}
+{"ip":"::1","level":"info","message":"AUTH FIRSTLOGIN -- LotharKlaue checked: is_firsttime = true","method":"GET","timestamp":"2026-03-18 14:24:08"}
+{"ip":"::1","level":"info","message":"ROOM CREATE -- Room added RoomBerto: With status code 201","method":"POST","timestamp":"2026-03-18 14:24:20"}
+{"ip":"::1","level":"info","message":"AUTH FIRSTLOGIN -- LotharKlaue checked: is_firsttime = true","method":"GET","timestamp":"2026-03-18 14:25:57"}
+{"ip":"::1","level":"info","message":"ROOM CREATE -- Room added RoomBerto: With status code 201","method":"POST","timestamp":"2026-03-18 14:26:15"}
+{"ip":"::1","level":"info","message":"AUTH FIRSTLOGIN -- LotharKlaue checked: is_firsttime = true","method":"GET","timestamp":"2026-03-18 14:26:23"}
+{"ip":"::1","level":"info","message":"ROOM CREATE -- Room added RoomBurta: With status code 201","method":"POST","timestamp":"2026-03-18 14:26:36"}
+{"ip":"::1","level":"info","message":"ROOM CREATE -- Room added RoomBu: With status code 201","method":"POST","timestamp":"2026-03-18 14:26:51"}
+{"ip":"::1","level":"info","message":"AUTH FIRSTLOGIN -- LotharKlaue checked: is_firsttime = true","method":"GET","timestamp":"2026-03-18 14:27:09"}
+{"ip":"::1","level":"info","message":"ROOM CREATE -- Room added ASDASD: With status code 201","method":"POST","timestamp":"2026-03-18 14:28:25"}
+{"ip":"::1","level":"info","message":"ROOM CREATE -- Room added SasASas: With status code 201","method":"POST","timestamp":"2026-03-18 14:30:53"}
+{"ip":"::1","level":"info","message":"ROOM CREATE -- Room added asdasdasdasd: With status code 201","method":"POST","timestamp":"2026-03-18 14:31:18"}
+{"ip":"::1","level":"info","message":"AUTH FIRSTLOGIN -- LotharKlaue checked: is_firsttime = true","method":"GET","timestamp":"2026-03-18 14:31:24"}
+{"ip":"::1","level":"info","message":"AUTH FIRSTLOGIN -- LotharKlaue checked: is_firsttime = true","method":"GET","timestamp":"2026-03-18 14:32:24"}
+{"ip":"::1","level":"info","message":"ROOM CREATE -- Room added Room 101: With status code 201","method":"POST","timestamp":"2026-03-18 14:32:37"}
+{"ip":"::1","level":"info","message":"ROOM CREATE -- Room added Room 102: With status code 201","method":"POST","timestamp":"2026-03-18 14:32:39"}
+{"ip":"::1","level":"info","message":"ROOM CREATE -- Room added Room 103: With status code 201","method":"POST","timestamp":"2026-03-18 14:32:42"}
+{"ip":"::1","level":"info","message":"ROOM CREATE -- Room added Room 105: With status code 201","method":"POST","timestamp":"2026-03-18 14:32:44"}
+{"ip":"::1","level":"info","message":"ROOM CREATE -- Room added Room 104: With status code 201","method":"POST","timestamp":"2026-03-18 14:33:20"}
+{"ip":"::1","level":"info","message":"ROOM CREATE -- Room added Room 106: With status code 201","method":"POST","timestamp":"2026-03-18 14:33:47"}
+{"ip":"::1","level":"info","message":"AUTH FIRSTLOGIN -- LotharKlaue checked: is_firsttime = true","method":"GET","timestamp":"2026-03-18 14:34:26"}
+{"ip":"::1","level":"info","message":"AUTH FIRSTLOGIN -- LotharKlaue checked: is_firsttime = true","method":"GET","timestamp":"2026-03-18 14:34:54"}
+{"ip":"::1","level":"info","message":"AUTH FIRSTLOGIN -- LotharKlaue checked: is_firsttime = true","method":"GET","timestamp":"2026-03-18 14:35:09"}
+{"ip":"::1","level":"info","message":"AUTH FIRSTLOGIN -- LotharKlaue checked: is_firsttime = true","method":"GET","timestamp":"2026-03-18 14:35:47"}
+{"ip":"::1","level":"info","message":"AUTH FIRSTLOGIN -- LotharKlaue checked: is_firsttime = true","method":"GET","timestamp":"2026-03-18 14:35:52"}
+{"ip":"::1","level":"info","message":"AUTH FIRSTLOGIN -- LotharKlaue checked: is_firsttime = true","method":"GET","timestamp":"2026-03-18 14:35:55"}
+{"ip":"::1","level":"info","message":"AUTH FIRSTLOGIN -- LotharKlaue checked: is_firsttime = true","method":"GET","timestamp":"2026-03-18 14:36:00"}
+{"ip":"::1","level":"info","message":"AUTH FIRSTLOGIN -- LotharKlaue checked: is_firsttime = true","method":"GET","timestamp":"2026-03-18 14:36:02"}
+{"ip":"::1","level":"info","message":"AUTH FIRSTLOGIN -- LotharKlaue checked: is_firsttime = true","method":"GET","timestamp":"2026-03-18 14:36:17"}
+{"ip":"::1","level":"info","message":"AUTH FIRSTLOGIN -- LotharKlaue checked: is_firsttime = true","method":"GET","timestamp":"2026-03-18 14:36:30"}
+{"ip":"::1","level":"info","message":"ROOM CREATE -- Room added Room 108: With status code 201","method":"POST","timestamp":"2026-03-18 14:36:48"}
+{"ip":"::1","level":"info","message":"AUTH FIRSTLOGIN -- LotharKlaue checked: is_firsttime = true","method":"GET","timestamp":"2026-03-18 14:37:14"}
+{"ip":"::1","level":"info","message":"AUTH FIRSTLOGIN -- LotharKlaue checked: is_firsttime = true","method":"GET","timestamp":"2026-03-18 14:37:46"}
+{"ip":"::1","level":"info","message":"AUTH REGISTER -- Registered the user dork.pdm@gmail.com: With status code 201","method":"POST","timestamp":"2026-03-18 14:52:17"}
+{"ip":"::1","level":"info","message":"AUTH LOGIN -- Email dork.pdm@gmail.com Login Succesfull","method":"POST","timestamp":"2026-03-18 14:52:43"}
+{"ip":"::1","level":"info","message":"AUTH FIRSTLOGIN -- Dominic Rivera checked: is_firsttime = true","method":"GET","timestamp":"2026-03-18 14:52:43"}
+{"ip":"::1","level":"info","message":"ROOM CREATE -- Room added Room 109: With status code 201","method":"POST","timestamp":"2026-03-18 14:58:02"}
+{"ip":"::1","level":"info","message":"AUTH FIRSTLOGIN -- Dominic Rivera checked: is_firsttime = true","method":"GET","timestamp":"2026-03-18 14:58:10"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-21 22:36:04"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-21 22:36:19"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-21 22:36:22"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-21 22:36:25"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-21 22:36:28"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-21 22:36:31"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-21 22:36:35"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-21 22:36:38"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-21 22:36:40"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-21 22:36:43"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-21 22:36:46"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-21 22:36:49"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-21 22:36:52"}
+{"ip":"::1","level":"info","message":"AUTH LOGIN -- Email dork.pdm@gmail.com Login Succesfull","method":"POST","timestamp":"2026-03-21 22:37:05"}
+{"ip":"::1","level":"info","message":"AUTH FIRSTLOGIN -- Dominic Rivera checked: is_firsttime = true","method":"GET","timestamp":"2026-03-21 22:37:05"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-21 22:37:42"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-03-23 01:28:20"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-23 01:28:32"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-23 01:28:35"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-23 01:28:38"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-23 01:28:41"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-23 01:28:44"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-23 01:28:47"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-23 01:28:50"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-23 01:28:53"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-23 01:28:56"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-23 01:28:59"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-23 01:29:02"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-03-23 01:29:05"}
+{"ip":"::1","level":"info","message":"AUTH LOGIN -- Email dork.pdm@gmail.com Login Succesfull","method":"POST","timestamp":"2026-03-23 01:29:15"}
+{"ip":"::1","level":"info","message":"AUTH FIRSTLOGIN -- Dominic Rivera checked: is_firsttime = true","method":"GET","timestamp":"2026-03-23 01:29:15"}
+{"ip":"::1","level":"info","message":"AUTH FIRSTLOGIN -- Dominic Rivera checked: is_firsttime = true","method":"GET","timestamp":"2026-03-23 01:41:18"}
+{"ip":"::1","level":"info","message":"ROOM CREATE -- Room added RoomBerto: With status code 201","method":"POST","timestamp":"2026-03-23 01:41:33"}
+{"ip":"::1","level":"info","message":"AUTH FIRSTLOGIN -- Dominic Rivera checked: is_firsttime = true","method":"GET","timestamp":"2026-03-23 01:41:55"}
+{"ip":"::1","level":"info","message":"AUTH FIRSTLOGIN -- Dominic Rivera checked: is_firsttime = true","method":"GET","timestamp":"2026-03-23 01:42:02"}
