@@ -19,7 +19,7 @@ import SlideRight from "../animations/slideRight";
 export default function Navbar() {
   const navigate = useNavigate();
   const { resetRooms } = useRooms();
-  const { logout } = useAuth();
+  const { logout, user } = useAuth();
   const { stopAllCameras } = useCamera();
 
   return (
@@ -57,13 +57,15 @@ export default function Navbar() {
             >
               <img src={Notif} alt="Notifications" />
             </button>
-
-            <button
-              onClick={() => navigate("/iris/organization")}
-              className="w-full aspect-square bg-[#E4E3E1] rounded-full flex items-center shadow-outside-dropshadow-small justify-center cursor-pointer hover:scale-102 hover:bg-[#d4d3d1] transition-transform duration-300 tooltip"
-            >
-              <img src={Organization} alt="Organization" />
-            </button>
+            
+            {user?.is_admin || user?.is_authorized && (
+              <button
+                onClick={() => navigate("/iris/organization")}
+                className="w-full aspect-square bg-[#E4E3E1] rounded-full flex items-center shadow-outside-dropshadow-small justify-center cursor-pointer hover:scale-102 hover:bg-[#d4d3d1] transition-transform duration-300 tooltip"
+              >
+                <img src={Organization} alt="Organization" />
+              </button>
+            )}
 
             <button
               onClick={() => navigate("/iris/development")}

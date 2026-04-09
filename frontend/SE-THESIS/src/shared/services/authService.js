@@ -48,3 +48,17 @@ export const checkFirstTime = async () => {
     throw error;
   }
 };
+
+export const updateOrganization = async (organizationId) => {
+  try {
+    const token = localStorage.getItem("token");
+    const response = await axiosClient.patch("/auth/update-organization", 
+      { user_organization: organizationId },
+      { headers: { Authorization: `Bearer ${token}` } }
+    );
+    return response.data;
+  } catch (error) {
+    console.error(error);
+    throw error;
+  }
+};

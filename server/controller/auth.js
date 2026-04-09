@@ -127,7 +127,7 @@ exports.loginUser = async (req, res) => {
 exports.userData = async (req, res, next) => {
   try {
     const user = await User.findById(req.userID).select(
-      "first_name last_name is_authorized is_firsttime",
+      "first_name last_name is_authorized is_firsttime user_organization is_admin",
     );
     logger.info({
       message: `AUTH USERDATA -- ${user.first_name} data requested from frontend: Accepted`,
@@ -171,5 +171,31 @@ exports.isFirstTime = async (req, res, next) => {
       method: req.method,
       ip: req.ip,
     });
+  }
+};
+
+exports.updateOrganization = async (req, res) => {
+  try {
+    const { user_organization } = req.body;
+    const user = await User.findByIdAndUpdate(
+      req.userID,
+      { user_organization },
+      { new: true }
+    ).select("first_name user_organization");
+
+    logger.info({
+      message: `AUTH UPDATE ORG -- ${user.first_name} updated organization to ${user_organization}`,
+      method: req.method,
+      ip: req.ip,
+    });
+
+    res.json({ message: "Organization updated successfully", user });
+  } catch (error) {
+    logger.error({
+      message: `AUTH UPDATE ORG -- ${error.message} with status code (500)`,
+      method: req.method,
+      ip: req.ip,
+    });
+    res.status(500).json({ message: error.message });
   }
 };
