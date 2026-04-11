@@ -17,3 +17,33 @@ export const addPoints = async (pointData) => {
     throw error;
   }
 };
+
+export const getROIPoints = async (roomId) => {
+  const token = localStorage.getItem("token");
+  if (!token) {
+    throw new Error("Unauthorized: Unknown user");
+  }
+
+  const response = await axiosClient.get(`/points/${roomId}`, {
+    headers: {
+      Authorization: `Bearer ${token}`,
+    },
+  });
+
+  return response.data;
+};
+
+export const deleteROIPoints = async (pointId, roiIndex) => {
+  const token = localStorage.getItem("token");
+  if (!token) {
+    throw new Error("Unauthorized: Unknown user");
+  } 
+
+  const response = await axiosClient.delete(`/points/${pointId}/${roiIndex}`, {
+    headers: {
+      Authorization: `Bearer ${token}`,
+    },
+  });
+  return response.data;
+};
+

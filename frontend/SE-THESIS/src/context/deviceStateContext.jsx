@@ -17,6 +17,7 @@ export function DeviceStateProvider({ children }) {
   useEffect(() => {
     localStorage.setItem("deviceStates", JSON.stringify(deviceStates));
   }, [deviceStates]);
+  
 
   const getDeviceState = (roomId) => {
     return deviceStates[roomId] || { lightsOn: false, fansOn: false };

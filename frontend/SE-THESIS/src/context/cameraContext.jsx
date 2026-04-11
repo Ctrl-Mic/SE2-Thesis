@@ -1,5 +1,6 @@
-import { createContext, useContext, useRef } from "react";
+import { createContext, useContext, useRef, useEffect } from "react";
 import { detectFrame } from "../shared/services/roomService.js";
+import { getROIPoints } from "../shared/services/pointService.js";
 
 const CameraContext = createContext();
 
@@ -10,6 +11,13 @@ export const CameraProvider = ({ children }) => {
   const streamsRef = useRef({});
   const captureIntervalsRef = useRef({});
   const captureResourcesRef = useRef({});
+
+  useEffect(() => {
+    startCamera();
+    startFrameCapture();
+    getROIPoints();
+    initializeRoomCamera();
+  }, []);
 
   //! Starts the camera for a specific room
   const startCamera = async (roomId, deviceId) => {
@@ -113,7 +121,7 @@ export const CameraProvider = ({ children }) => {
   };
 
   //! Frame capture
-  const startFrameCapture = (roomId) => {
+  const startFrameCapture = async (roomId) => {
     const stream = streamsRef.current[roomId];
 
     if (!stream) {
@@ -123,6 +131,41 @@ export const CameraProvider = ({ children }) => {
 
     if (captureIntervalsRef.current[roomId]) {
       console.log("Frame capture already running for room:", roomId);
+      return;
+    }
+
+    let roiPayload = [];
+
+    try {
+      const roiData = await getROIPoints(roomId);
+
+      //! group DB rows into ROI sets
+      const groupedROIs = {};
+
+      roiData.forEach((point) => {
+        if (!groupedROIs[point.point_index]) {
+          groupedROIs[point.point_index] = [];
+        }
+
+        groupedROIs[point.point_index].push({
+          point_x: point.point_x,
+          point_y: point.point_y,
+          point_order: point.point_order,
+        });
+      });
+
+      roiPayload = Object.keys(groupedROIs)
+        .sort((a, b) => Number(a) - Number(b))
+        .map((key) => ({
+          roi_index: Number(key),
+          points: groupedROIs[key].sort(
+            (a, b) => a.point_order - b.point_order,
+          ),
+        }));
+
+      console.log("ROI PAYLOAD FOR ROOM:", roomId, roiPayload);
+    } catch (error) {
+      console.error("Failed to fetch ROI for room:", roomId, error);
       return;
     }
 
@@ -162,6 +205,11 @@ export const CameraProvider = ({ children }) => {
               const formData = new FormData();
               formData.append("file", blob, "frame.jpg");
               formData.append("roomId", String(roomId));
+              formData.append("rois", JSON.stringify(roiPayload));
+
+              for (const pair of formData.entries()) {
+                console.log("FORMDATA:", pair[0], pair[1]);
+              }
 
               try {
                 const data = await detectFrame(formData);

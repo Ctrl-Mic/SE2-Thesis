@@ -2925,23 +2925,177 @@
 {"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-10 00:34:32"}
 {"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-10 00:34:40"}
 {"ip":"::1","level":"info","message":"ROI ADD -- ROI added undefined: With status code 201","method":"POST","timestamp":"2026-04-10 00:41:54"}
-{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-11 14:31:57"}
-{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-04-11 14:34:20"}
-{"ip":"::1","level":"error","message":"AUTH LOGIN -- Cannot read properties of null (reading 'email') with status code (500)","method":"POST","timestamp":"2026-04-11 14:34:55"}
-{"ip":"::1","level":"error","message":"AUTH LOGIN -- Cannot read properties of null (reading 'email') with status code (500)","method":"POST","timestamp":"2026-04-11 14:35:42"}
-{"ip":"::1","level":"error","message":"AUTH LOGIN -- Cannot read properties of null (reading 'email') with status code (500)","method":"POST","timestamp":"2026-04-11 14:36:01"}
-{"ip":"::1","level":"error","message":"AUTH LOGIN -- Cannot read properties of null (reading 'email') with status code (500)","method":"POST","timestamp":"2026-04-11 14:36:23"}
-{"ip":"::1","level":"error","message":"AUTH LOGIN -- Cannot read properties of null (reading 'email') with status code (500)","method":"POST","timestamp":"2026-04-11 14:36:57"}
-{"ip":"::1","level":"info","message":"AUTH LOGIN -- Email princessaprilsanandres@gmail.com Login Succesfull","method":"POST","timestamp":"2026-04-11 14:37:32"}
-{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69d45a837af65306dd3c38f5'),\n  room_name: 'bahay ni einie',\n  room_owner: {\n    _id: new ObjectId('69d45a1a7af65306dd3c38ef'),\n    first_name: 'princess april'\n  },\n  room_occupants: 0,\n  __v: 0\n}","timestamp":"2026-04-11 14:37:32"}
-{"ip":"::1","level":"info","message":"AUTH USERDATA -- princess april data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-11 14:59:39"}
-{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69d45a837af65306dd3c38f5'),\n  room_name: 'bahay ni einie',\n  room_owner: {\n    _id: new ObjectId('69d45a1a7af65306dd3c38ef'),\n    first_name: 'princess april'\n  },\n  room_occupants: 0,\n  __v: 0\n}","timestamp":"2026-04-11 14:59:39"}
-{"ip":"::1","level":"info","message":"AUTH USERDATA -- princess april data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-11 15:23:04"}
-{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69d45a837af65306dd3c38f5'),\n  room_name: 'bahay ni einie',\n  room_owner: {\n    _id: new ObjectId('69d45a1a7af65306dd3c38ef'),\n    first_name: 'princess april'\n  },\n  room_occupants: 0,\n  __v: 0\n}","timestamp":"2026-04-11 15:23:04"}
-{"ip":"::1","level":"info","message":"AUTH LOGIN -- Email princessaprilsanandres@gmail.com Login Succesfull","method":"POST","timestamp":"2026-04-11 15:37:45"}
-{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69d45a837af65306dd3c38f5'),\n  room_name: 'bahay ni einie',\n  room_owner: {\n    _id: new ObjectId('69d45a1a7af65306dd3c38ef'),\n    first_name: 'princess april'\n  },\n  room_occupants: 0,\n  __v: 0\n}","timestamp":"2026-04-11 15:37:45"}
-{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-04-11 16:16:23"}
-{"ip":"::1","level":"info","message":"AUTH USERDATA -- princess april data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-11 16:16:23"}
-{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69d45a837af65306dd3c38f5'),\n  room_name: 'bahay ni einie',\n  room_owner: {\n    _id: new ObjectId('69d45a1a7af65306dd3c38ef'),\n    first_name: 'princess april'\n  },\n  room_occupants: 0,\n  __v: 0\n}","timestamp":"2026-04-11 16:16:23"}
-{"ip":"::1","level":"info","message":"AUTH LOGIN -- Email princessaprilsanandres@gmail.com Login Succesfull","method":"POST","timestamp":"2026-04-11 16:16:33"}
-{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69d45a837af65306dd3c38f5'),\n  room_name: 'bahay ni einie',\n  room_owner: {\n    _id: new ObjectId('69d45a1a7af65306dd3c38ef'),\n    first_name: 'princess april'\n  },\n  room_occupants: 0,\n  __v: 0\n}","timestamp":"2026-04-11 16:16:33"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-10 00:47:13"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-11 08:12:53"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-04-11 08:20:15"}
+{"ip":"::1","level":"info","message":"AUTH LOGIN -- Email trizxd123@gmail.com Login Succesfull","method":"POST","timestamp":"2026-04-11 08:20:23"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69d7aa776ca4fca79cae8936'),\n  room_name: 'Sample Room',\n  room_owner: {\n    _id: new ObjectId('69c3e8291e0871695eda9ee1'),\n    first_name: 'Triztan'\n  },\n  room_occupants: 0,\n  __v: 0\n}","timestamp":"2026-04-11 08:20:23"}
+{"ip":"::1","level":"info","message":"ROI ADD -- ROI added undefined: With status code 201","method":"POST","timestamp":"2026-04-11 08:20:41"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-11 08:22:14"}
+{"ip":"::1","level":"info","message":"ROI ADD -- ROI added undefined: With status code 201","method":"POST","timestamp":"2026-04-11 08:22:34"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-11 08:23:19"}
+{"ip":"::ffff:127.0.0.1","level":"info","message":"ROI ADD -- ROI added undefined: With status code 201","method":"POST","timestamp":"2026-04-11 08:23:28"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-11 08:27:55"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-11 08:28:05"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-11 08:29:55"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-11 08:30:13"}
+{"ip":"::ffff:127.0.0.1","level":"info","message":"ROI ADD -- ROI points added for room 69d7aa776ca4fca79cae8936: With status code 201","method":"POST","timestamp":"2026-04-11 08:30:40"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-11 08:37:32"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69d7aa776ca4fca79cae8936'),\n  room_name: 'Sample Room',\n  room_owner: {\n    _id: new ObjectId('69c3e8291e0871695eda9ee1'),\n    first_name: 'Triztan'\n  },\n  room_occupants: 0,\n  __v: 0\n}","timestamp":"2026-04-11 08:37:32"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-11 08:45:13"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69d7aa776ca4fca79cae8936'),\n  room_name: 'Sample Room',\n  room_owner: {\n    _id: new ObjectId('69c3e8291e0871695eda9ee1'),\n    first_name: 'Triztan'\n  },\n  room_occupants: 0,\n  __v: 0\n}","timestamp":"2026-04-11 08:45:13"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-11 08:45:14"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69d7aa776ca4fca79cae8936'),\n  room_name: 'Sample Room',\n  room_owner: {\n    _id: new ObjectId('69c3e8291e0871695eda9ee1'),\n    first_name: 'Triztan'\n  },\n  room_occupants: 0,\n  __v: 0\n}","timestamp":"2026-04-11 08:45:14"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-11 08:45:17"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69d7aa776ca4fca79cae8936'),\n  room_name: 'Sample Room',\n  room_owner: {\n    _id: new ObjectId('69c3e8291e0871695eda9ee1'),\n    first_name: 'Triztan'\n  },\n  room_occupants: 0,\n  __v: 0\n}","timestamp":"2026-04-11 08:45:17"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-11 08:45:33"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69d7aa776ca4fca79cae8936'),\n  room_name: 'Sample Room',\n  room_owner: {\n    _id: new ObjectId('69c3e8291e0871695eda9ee1'),\n    first_name: 'Triztan'\n  },\n  room_occupants: 0,\n  __v: 0\n}","timestamp":"2026-04-11 08:45:33"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-11 08:45:34"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69d7aa776ca4fca79cae8936'),\n  room_name: 'Sample Room',\n  room_owner: {\n    _id: new ObjectId('69c3e8291e0871695eda9ee1'),\n    first_name: 'Triztan'\n  },\n  room_occupants: 0,\n  __v: 0\n}","timestamp":"2026-04-11 08:45:34"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-11 08:45:37"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69d7aa776ca4fca79cae8936'),\n  room_name: 'Sample Room',\n  room_owner: {\n    _id: new ObjectId('69c3e8291e0871695eda9ee1'),\n    first_name: 'Triztan'\n  },\n  room_occupants: 0,\n  __v: 0\n}","timestamp":"2026-04-11 08:45:37"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-11 08:45:39"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69d7aa776ca4fca79cae8936'),\n  room_name: 'Sample Room',\n  room_owner: {\n    _id: new ObjectId('69c3e8291e0871695eda9ee1'),\n    first_name: 'Triztan'\n  },\n  room_occupants: 0,\n  __v: 0\n}","timestamp":"2026-04-11 08:45:39"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-11 08:45:42"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69d7aa776ca4fca79cae8936'),\n  room_name: 'Sample Room',\n  room_owner: {\n    _id: new ObjectId('69c3e8291e0871695eda9ee1'),\n    first_name: 'Triztan'\n  },\n  room_occupants: 0,\n  __v: 0\n}","timestamp":"2026-04-11 08:45:42"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-11 08:45:45"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69d7aa776ca4fca79cae8936'),\n  room_name: 'Sample Room',\n  room_owner: {\n    _id: new ObjectId('69c3e8291e0871695eda9ee1'),\n    first_name: 'Triztan'\n  },\n  room_occupants: 0,\n  __v: 0\n}","timestamp":"2026-04-11 08:45:45"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-11 08:45:48"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69d7aa776ca4fca79cae8936'),\n  room_name: 'Sample Room',\n  room_owner: {\n    _id: new ObjectId('69c3e8291e0871695eda9ee1'),\n    first_name: 'Triztan'\n  },\n  room_occupants: 0,\n  __v: 0\n}","timestamp":"2026-04-11 08:45:48"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-11 08:45:51"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69d7aa776ca4fca79cae8936'),\n  room_name: 'Sample Room',\n  room_owner: {\n    _id: new ObjectId('69c3e8291e0871695eda9ee1'),\n    first_name: 'Triztan'\n  },\n  room_occupants: 0,\n  __v: 0\n}","timestamp":"2026-04-11 08:45:51"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-11 08:45:58"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69d7aa776ca4fca79cae8936'),\n  room_name: 'Sample Room',\n  room_owner: {\n    _id: new ObjectId('69c3e8291e0871695eda9ee1'),\n    first_name: 'Triztan'\n  },\n  room_occupants: 0,\n  __v: 0\n}","timestamp":"2026-04-11 08:45:58"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-11 08:46:02"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69d7aa776ca4fca79cae8936'),\n  room_name: 'Sample Room',\n  room_owner: {\n    _id: new ObjectId('69c3e8291e0871695eda9ee1'),\n    first_name: 'Triztan'\n  },\n  room_occupants: 0,\n  __v: 0\n}","timestamp":"2026-04-11 08:46:02"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-11 08:46:02"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69d7aa776ca4fca79cae8936'),\n  room_name: 'Sample Room',\n  room_owner: {\n    _id: new ObjectId('69c3e8291e0871695eda9ee1'),\n    first_name: 'Triztan'\n  },\n  room_occupants: 0,\n  __v: 0\n}","timestamp":"2026-04-11 08:46:02"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-11 08:46:03"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69d7aa776ca4fca79cae8936'),\n  room_name: 'Sample Room',\n  room_owner: {\n    _id: new ObjectId('69c3e8291e0871695eda9ee1'),\n    first_name: 'Triztan'\n  },\n  room_occupants: 0,\n  __v: 0\n}","timestamp":"2026-04-11 08:46:03"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-11 08:46:03"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69d7aa776ca4fca79cae8936'),\n  room_name: 'Sample Room',\n  room_owner: {\n    _id: new ObjectId('69c3e8291e0871695eda9ee1'),\n    first_name: 'Triztan'\n  },\n  room_occupants: 0,\n  __v: 0\n}","timestamp":"2026-04-11 08:46:03"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-11 08:46:04"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69d7aa776ca4fca79cae8936'),\n  room_name: 'Sample Room',\n  room_owner: {\n    _id: new ObjectId('69c3e8291e0871695eda9ee1'),\n    first_name: 'Triztan'\n  },\n  room_occupants: 0,\n  __v: 0\n}","timestamp":"2026-04-11 08:46:04"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-11 08:46:19"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69d7aa776ca4fca79cae8936'),\n  room_name: 'Sample Room',\n  room_owner: {\n    _id: new ObjectId('69c3e8291e0871695eda9ee1'),\n    first_name: 'Triztan'\n  },\n  room_occupants: 0,\n  __v: 0\n}","timestamp":"2026-04-11 08:46:19"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-11 08:46:21"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69d7aa776ca4fca79cae8936'),\n  room_name: 'Sample Room',\n  room_owner: {\n    _id: new ObjectId('69c3e8291e0871695eda9ee1'),\n    first_name: 'Triztan'\n  },\n  room_occupants: 0,\n  __v: 0\n}","timestamp":"2026-04-11 08:46:21"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-11 08:49:35"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69d7aa776ca4fca79cae8936'),\n  room_name: 'Sample Room',\n  room_owner: {\n    _id: new ObjectId('69c3e8291e0871695eda9ee1'),\n    first_name: 'Triztan'\n  },\n  room_occupants: 0,\n  __v: 0\n}","timestamp":"2026-04-11 08:49:35"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-11 08:49:38"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69d7aa776ca4fca79cae8936'),\n  room_name: 'Sample Room',\n  room_owner: {\n    _id: new ObjectId('69c3e8291e0871695eda9ee1'),\n    first_name: 'Triztan'\n  },\n  room_occupants: 0,\n  __v: 0\n}","timestamp":"2026-04-11 08:49:38"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-11 08:49:39"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69d7aa776ca4fca79cae8936'),\n  room_name: 'Sample Room',\n  room_owner: {\n    _id: new ObjectId('69c3e8291e0871695eda9ee1'),\n    first_name: 'Triztan'\n  },\n  room_occupants: 0,\n  __v: 0\n}","timestamp":"2026-04-11 08:49:39"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-11 08:51:48"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69d7aa776ca4fca79cae8936'),\n  room_name: 'Sample Room',\n  room_owner: {\n    _id: new ObjectId('69c3e8291e0871695eda9ee1'),\n    first_name: 'Triztan'\n  },\n  room_occupants: 0,\n  __v: 0\n}","timestamp":"2026-04-11 08:51:48"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-11 08:53:29"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-11 08:53:32"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-11 08:53:34"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-11 08:53:40"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-11 08:55:17"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-11 08:55:39"}
+{"ip":"::1","level":"info","message":"AUTH LOGIN -- Email trizxd123@gmail.com Login Succesfull","method":"POST","timestamp":"2026-04-11 08:56:01"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69d7aa776ca4fca79cae8936'),\n  room_name: 'Sample Room',\n  room_owner: {\n    _id: new ObjectId('69c3e8291e0871695eda9ee1'),\n    first_name: 'Triztan'\n  },\n  room_occupants: 0,\n  __v: 0\n}","timestamp":"2026-04-11 08:56:01"}
+{"ip":"::1","level":"info","message":"ROI ADD -- ROI points added for room 69d7aa776ca4fca79cae8936: With status code 201","method":"POST","timestamp":"2026-04-11 08:56:34"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-11 08:59:17"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69d7aa776ca4fca79cae8936'),\n  room_name: 'Sample Room',\n  room_owner: {\n    _id: new ObjectId('69c3e8291e0871695eda9ee1'),\n    first_name: 'Triztan'\n  },\n  room_occupants: 0,\n  __v: 0\n}","timestamp":"2026-04-11 08:59:18"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-11 09:02:39"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69d7aa776ca4fca79cae8936'),\n  room_name: 'Sample Room',\n  room_owner: {\n    _id: new ObjectId('69c3e8291e0871695eda9ee1'),\n    first_name: 'Triztan'\n  },\n  room_occupants: 0,\n  __v: 0\n}","timestamp":"2026-04-11 09:02:39"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-11 09:02:41"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69d7aa776ca4fca79cae8936'),\n  room_name: 'Sample Room',\n  room_owner: {\n    _id: new ObjectId('69c3e8291e0871695eda9ee1'),\n    first_name: 'Triztan'\n  },\n  room_occupants: 0,\n  __v: 0\n}","timestamp":"2026-04-11 09:02:41"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-11 09:02:43"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69d7aa776ca4fca79cae8936'),\n  room_name: 'Sample Room',\n  room_owner: {\n    _id: new ObjectId('69c3e8291e0871695eda9ee1'),\n    first_name: 'Triztan'\n  },\n  room_occupants: 0,\n  __v: 0\n}","timestamp":"2026-04-11 09:02:43"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-11 09:04:50"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-11 09:42:35"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-11 09:42:40"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-11 09:42:44"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-11 09:42:45"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-11 09:43:12"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-11 09:43:41"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-11 09:44:25"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-11 09:44:28"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-11 09:44:29"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-11 09:44:44"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-11 09:44:49"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-11 09:44:51"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-11 09:46:11"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69d7aa776ca4fca79cae8936'),\n  room_name: 'Sample Room',\n  room_owner: {\n    _id: new ObjectId('69c3e8291e0871695eda9ee1'),\n    first_name: 'Triztan'\n  },\n  room_occupants: 0,\n  __v: 0\n}","timestamp":"2026-04-11 09:46:11"}
+{"ip":"::1","level":"info","message":"ROI ADD -- ROI points added for room 69d7aa776ca4fca79cae8936: With status code 201","method":"POST","timestamp":"2026-04-11 10:02:57"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-11 10:04:06"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69d7aa776ca4fca79cae8936'),\n  room_name: 'Sample Room',\n  room_owner: {\n    _id: new ObjectId('69c3e8291e0871695eda9ee1'),\n    first_name: 'Triztan'\n  },\n  room_occupants: 0,\n  __v: 0\n}","timestamp":"2026-04-11 10:04:06"}
+{"ip":"::1","level":"info","message":"ROI ADD -- ROI points added for room 69d7aa776ca4fca79cae8936: With status code 201","method":"POST","timestamp":"2026-04-11 10:54:26"}
+{"ip":"::1","level":"info","message":"ROI ADD -- ROI points added for room 69d7aa776ca4fca79cae8936: With status code 201","method":"POST","timestamp":"2026-04-11 10:59:18"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-11 17:10:52"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-11 17:11:19"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69d7aa776ca4fca79cae8936'),\n  room_name: 'Sample Room',\n  room_owner: {\n    _id: new ObjectId('69c3e8291e0871695eda9ee1'),\n    first_name: 'Triztan'\n  },\n  room_occupants: 0,\n  __v: 0\n}","timestamp":"2026-04-11 17:11:19"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-11 17:59:26"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69d7aa776ca4fca79cae8936'),\n  room_name: 'Sample Room',\n  room_owner: {\n    _id: new ObjectId('69c3e8291e0871695eda9ee1'),\n    first_name: 'Triztan'\n  },\n  room_occupants: 0,\n  __v: 0\n}","timestamp":"2026-04-11 17:59:26"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-11 18:02:13"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69d7aa776ca4fca79cae8936'),\n  room_name: 'Sample Room',\n  room_owner: {\n    _id: new ObjectId('69c3e8291e0871695eda9ee1'),\n    first_name: 'Triztan'\n  },\n  room_occupants: 0,\n  __v: 0\n}","timestamp":"2026-04-11 18:02:13"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-11 18:02:16"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69d7aa776ca4fca79cae8936'),\n  room_name: 'Sample Room',\n  room_owner: {\n    _id: new ObjectId('69c3e8291e0871695eda9ee1'),\n    first_name: 'Triztan'\n  },\n  room_occupants: 0,\n  __v: 0\n}","timestamp":"2026-04-11 18:02:16"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-11 18:10:29"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69d7aa776ca4fca79cae8936'),\n  room_name: 'Sample Room',\n  room_owner: {\n    _id: new ObjectId('69c3e8291e0871695eda9ee1'),\n    first_name: 'Triztan'\n  },\n  room_occupants: 0,\n  __v: 0\n}","timestamp":"2026-04-11 18:10:29"}
+{"ip":"::1","level":"info","message":"ROI ADD -- ROI points added for room 69d7aa776ca4fca79cae8936: With status code 201","method":"POST","timestamp":"2026-04-11 18:10:59"}
+{"ip":"::1","level":"info","message":"ROI ADD -- ROI points added for room 69d7aa776ca4fca79cae8936: With status code 201","method":"POST","timestamp":"2026-04-11 18:11:58"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-11 18:21:57"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69d7aa776ca4fca79cae8936'),\n  room_name: 'Sample Room',\n  room_owner: {\n    _id: new ObjectId('69c3e8291e0871695eda9ee1'),\n    first_name: 'Triztan'\n  },\n  room_occupants: 0,\n  __v: 0\n}","timestamp":"2026-04-11 18:21:57"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-11 18:22:01"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69d7aa776ca4fca79cae8936'),\n  room_name: 'Sample Room',\n  room_owner: {\n    _id: new ObjectId('69c3e8291e0871695eda9ee1'),\n    first_name: 'Triztan'\n  },\n  room_occupants: 0,\n  __v: 0\n}","timestamp":"2026-04-11 18:22:01"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-11 18:22:03"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69d7aa776ca4fca79cae8936'),\n  room_name: 'Sample Room',\n  room_owner: {\n    _id: new ObjectId('69c3e8291e0871695eda9ee1'),\n    first_name: 'Triztan'\n  },\n  room_occupants: 0,\n  __v: 0\n}","timestamp":"2026-04-11 18:22:03"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-11 18:22:09"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69d7aa776ca4fca79cae8936'),\n  room_name: 'Sample Room',\n  room_owner: {\n    _id: new ObjectId('69c3e8291e0871695eda9ee1'),\n    first_name: 'Triztan'\n  },\n  room_occupants: 0,\n  __v: 0\n}","timestamp":"2026-04-11 18:22:09"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-11 18:22:12"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69d7aa776ca4fca79cae8936'),\n  room_name: 'Sample Room',\n  room_owner: {\n    _id: new ObjectId('69c3e8291e0871695eda9ee1'),\n    first_name: 'Triztan'\n  },\n  room_occupants: 0,\n  __v: 0\n}","timestamp":"2026-04-11 18:22:12"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-11 18:22:15"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69d7aa776ca4fca79cae8936'),\n  room_name: 'Sample Room',\n  room_owner: {\n    _id: new ObjectId('69c3e8291e0871695eda9ee1'),\n    first_name: 'Triztan'\n  },\n  room_occupants: 0,\n  __v: 0\n}","timestamp":"2026-04-11 18:22:15"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-11 18:37:46"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-11 18:40:00"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-04-11 18:40:00"}
+{"ip":"::ffff:127.0.0.1","level":"info","message":"AUTH LOGIN -- Email trizxd123@gmail.com Login Succesfull","method":"POST","timestamp":"2026-04-11 18:40:06"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69d7aa776ca4fca79cae8936'),\n  room_name: 'Sample Room',\n  room_owner: {\n    _id: new ObjectId('69c3e8291e0871695eda9ee1'),\n    first_name: 'Triztan'\n  },\n  room_occupants: 0,\n  __v: 0\n}","timestamp":"2026-04-11 18:40:07"}
+{"ip":"::1","level":"info","message":"ROI ADD -- ROI points added for room 69d7aa776ca4fca79cae8936: With status code 201","method":"POST","timestamp":"2026-04-11 18:43:32"}
+{"ip":"::1","level":"info","message":"ROI ADD -- ROI points added for room 69d7aa776ca4fca79cae8936: With status code 201","method":"POST","timestamp":"2026-04-11 18:44:02"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-11 18:55:59"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69d7aa776ca4fca79cae8936'),\n  room_name: 'Sample Room',\n  room_owner: {\n    _id: new ObjectId('69c3e8291e0871695eda9ee1'),\n    first_name: 'Triztan'\n  },\n  room_occupants: 0,\n  __v: 0\n}","timestamp":"2026-04-11 18:55:59"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-11 18:58:06"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69d7aa776ca4fca79cae8936'),\n  room_name: 'Sample Room',\n  room_owner: {\n    _id: new ObjectId('69c3e8291e0871695eda9ee1'),\n    first_name: 'Triztan'\n  },\n  room_occupants: 0,\n  __v: 0\n}","timestamp":"2026-04-11 18:58:06"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-11 19:00:10"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69d7aa776ca4fca79cae8936'),\n  room_name: 'Sample Room',\n  room_owner: {\n    _id: new ObjectId('69c3e8291e0871695eda9ee1'),\n    first_name: 'Triztan'\n  },\n  room_occupants: 0,\n  __v: 0\n}","timestamp":"2026-04-11 19:00:10"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-11 19:00:49"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69d7aa776ca4fca79cae8936'),\n  room_name: 'Sample Room',\n  room_owner: {\n    _id: new ObjectId('69c3e8291e0871695eda9ee1'),\n    first_name: 'Triztan'\n  },\n  room_occupants: 0,\n  __v: 0\n}","timestamp":"2026-04-11 19:00:49"}
+{"ip":"::1","level":"info","message":"ROOM DELETE -- Room deleted: Sample Room","method":"DELETE","timestamp":"2026-04-11 19:01:07"}
+{"ip":"::1","level":"info","message":"ROOM CREATE -- Room added Room 308: With status code 201","method":"POST","timestamp":"2026-04-11 19:01:13"}
+{"ip":"::1","level":"info","message":"DEVICE CREATE -- Device added Iriun Webcam: With status code 201","method":"POST","timestamp":"2026-04-11 19:01:17"}
+{"ip":"::1","level":"info","message":"ROOM DELETE -- Room deleted: Room 308","method":"DELETE","timestamp":"2026-04-11 19:01:29"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-11 19:01:31"}
+{"level":"info","message":"ROOMS FETCHED -- ","timestamp":"2026-04-11 19:01:31"}
+{"ip":"::1","level":"info","message":"ROOM CREATE -- Room added Sample Room: With status code 201","method":"POST","timestamp":"2026-04-11 19:01:40"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-11 19:02:18"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-04-11 19:02:24"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-11 19:02:25"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69da2a1486f1c9165b26aadc'),\n  room_name: 'Sample Room',\n  room_owner: {\n    _id: new ObjectId('69c3e8291e0871695eda9ee1'),\n    first_name: 'Triztan'\n  },\n  room_occupants: 0,\n  __v: 0\n}","timestamp":"2026-04-11 19:02:25"}
+{"ip":"::1","level":"info","message":"SERVER - Health check request","method":"GET","route":"/health","status":200,"timestamp":"2026-04-11 19:02:27"}
+{"ip":"::1","level":"info","message":"AUTH LOGIN -- Email trizxd123@gmail.com Login Succesfull","method":"POST","timestamp":"2026-04-11 19:02:33"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69da2a1486f1c9165b26aadc'),\n  room_name: 'Sample Room',\n  room_owner: {\n    _id: new ObjectId('69c3e8291e0871695eda9ee1'),\n    first_name: 'Triztan'\n  },\n  room_occupants: 0,\n  __v: 0\n}","timestamp":"2026-04-11 19:02:33"}
+{"ip":"::1","level":"info","message":"DEVICE CREATE -- Device added SN-U01 (0c45:636b): With status code 201","method":"POST","timestamp":"2026-04-11 19:02:38"}
+{"ip":"::1","level":"info","message":"ROI ADD -- ROI points added for room 69da2a1486f1c9165b26aadc: With status code 201","method":"POST","timestamp":"2026-04-11 19:02:55"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-11 19:06:29"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69da2a1486f1c9165b26aadc'),\n  room_name: 'Sample Room',\n  room_owner: {\n    _id: new ObjectId('69c3e8291e0871695eda9ee1'),\n    first_name: 'Triztan'\n  },\n  room_occupants: 0,\n  __v: 0\n}","timestamp":"2026-04-11 19:06:29"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-11 19:10:31"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69da2a1486f1c9165b26aadc'),\n  room_name: 'Sample Room',\n  room_owner: {\n    _id: new ObjectId('69c3e8291e0871695eda9ee1'),\n    first_name: 'Triztan'\n  },\n  room_occupants: 0,\n  __v: 0\n}","timestamp":"2026-04-11 19:10:31"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-11 19:12:31"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69da2a1486f1c9165b26aadc'),\n  room_name: 'Sample Room',\n  room_owner: {\n    _id: new ObjectId('69c3e8291e0871695eda9ee1'),\n    first_name: 'Triztan'\n  },\n  room_occupants: 0,\n  __v: 0\n}","timestamp":"2026-04-11 19:12:32"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-11 19:12:34"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69da2a1486f1c9165b26aadc'),\n  room_name: 'Sample Room',\n  room_owner: {\n    _id: new ObjectId('69c3e8291e0871695eda9ee1'),\n    first_name: 'Triztan'\n  },\n  room_occupants: 0,\n  __v: 0\n}","timestamp":"2026-04-11 19:12:34"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-11 19:12:36"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69da2a1486f1c9165b26aadc'),\n  room_name: 'Sample Room',\n  room_owner: {\n    _id: new ObjectId('69c3e8291e0871695eda9ee1'),\n    first_name: 'Triztan'\n  },\n  room_occupants: 0,\n  __v: 0\n}","timestamp":"2026-04-11 19:12:36"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-11 19:12:49"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69da2a1486f1c9165b26aadc'),\n  room_name: 'Sample Room',\n  room_owner: {\n    _id: new ObjectId('69c3e8291e0871695eda9ee1'),\n    first_name: 'Triztan'\n  },\n  room_occupants: 0,\n  __v: 0\n}","timestamp":"2026-04-11 19:12:49"}
+{"ip":"::1","level":"info","message":"ROI ADD -- ROI points added for room 69da2a1486f1c9165b26aadc: With status code 201","method":"POST","timestamp":"2026-04-11 19:16:15"}
+{"ip":"::1","level":"info","message":"AUTH USERDATA -- Triztan data requested from frontend: Accepted","method":"GET","timestamp":"2026-04-11 19:16:41"}
+{"level":"info","message":"ROOMS FETCHED -- {\n  _id: new ObjectId('69da2a1486f1c9165b26aadc'),\n  room_name: 'Sample Room',\n  room_owner: {\n    _id: new ObjectId('69c3e8291e0871695eda9ee1'),\n    first_name: 'Triztan'\n  },\n  room_occupants: 0,\n  __v: 0\n}","timestamp":"2026-04-11 19:16:41"}
+{"ip":"::1","level":"info","message":"ROI ADD -- ROI points added for room 69da2a1486f1c9165b26aadc: With status code 201","method":"POST","timestamp":"2026-04-11 19:44:24"}
+{"ip":"::1","level":"info","message":"ROI ADD -- ROI points added for room 69da2a1486f1c9165b26aadc: With status code 201","method":"POST","timestamp":"2026-04-11 19:52:09"}
+{"level":"info","message":"SERVER -- Server started runnin on port: 4000","timestamp":"2026-04-11 19:52:55"}

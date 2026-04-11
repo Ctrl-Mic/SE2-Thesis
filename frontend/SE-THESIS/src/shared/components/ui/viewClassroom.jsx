@@ -17,7 +17,11 @@ import { socket } from "../../services/socketService";
 import { Toaster } from "../../components/ui/sonner";
 import { useCamera } from "../../../context/cameraContext";
 import { toast } from "sonner";
-import { addPoints } from "../../services/pointService";
+import {
+  addPoints,
+  getROIPoints,
+  deleteROIPoints,
+} from "../../services/pointService";
 
 function PaperComponent(props) {
   const nodeRef = useRef(null);
@@ -33,20 +37,129 @@ function PaperComponent(props) {
   );
 }
 
-function VideoModal({ room, stream, onClose }) {
+function VideoModal({ room, roomName, stream, onClose }) {
   const modalVideoRef = useRef(null);
   const [isMarking, setIsMarking] = useState(false);
   const [points, setPoints] = useState([]);
-  const [isSaved, setIsSaved] = useState(false);
-  const [isSaving, setIsSaving] = useState(false);
-  const now = new Date();
   const [roiSets, setRoiSets] = useState([]);
+  const [isSaving, setIsSaving] = useState(false);
+  const [isSaved, setIsSaved] = useState(false);
+  const [showSavedROIs, setShowSavedROIs] = useState(true);
+  const now = new Date();
 
   useEffect(() => {
     if (modalVideoRef.current && stream) {
       modalVideoRef.current.srcObject = stream;
     }
   }, [stream]);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (room) loadSavedROIs();
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, [room, stream]);
+
+  useEffect(() => {
+    const videoEl = modalVideoRef.current;
+    if (!videoEl || !room) return;
+
+    const handleLoadedMetadata = () => {
+      loadSavedROIs();
+    };
+
+    videoEl.addEventListener("loadedmetadata", handleLoadedMetadata);
+
+    if (videoEl.readyState >= 1) {
+      loadSavedROIs();
+    }
+
+    return () => {
+      videoEl.removeEventListener("loadedmetadata", handleLoadedMetadata);
+    };
+  }, [room, stream]);
+
+  const loadSavedROIs = async () => {
+    try {
+      const data = await getROIPoints(room);
+
+      // data is expected as DB rows:
+      // [{ room_id, point_x, point_y, point_index, point_order }, ...]
+
+      const grouped = {};
+
+      data.forEach((point) => {
+        if (!grouped[point.point_index]) {
+          grouped[point.point_index] = [];
+        }
+
+        const displayPoint = convertVideoPointToDisplayPoint(
+          point.point_x,
+          point.point_y,
+        );
+
+        if (!displayPoint) return;
+
+        grouped[point.point_index].push({
+          displayX: displayPoint.displayX,
+          displayY: displayPoint.displayY,
+          videoX: point.point_x,
+          videoY: point.point_y,
+          point_order: point.point_order,
+        });
+      });
+
+      const formattedROIs = Object.keys(grouped)
+        .sort((a, b) => Number(a) - Number(b))
+        .map((key) => ({
+          roi_index: Number(key),
+          points: grouped[key].sort((a, b) => a.point_order - b.point_order),
+        }));
+
+      setRoiSets(formattedROIs);
+    } catch (error) {
+      console.error("Failed to load ROI for room:", room, error);
+    }
+  };
+
+  const convertVideoPointToDisplayPoint = (videoX, videoY) => {
+    const videoEl = modalVideoRef.current;
+    if (!videoEl || !videoEl.videoWidth || !videoEl.videoHeight) {
+      return null;
+    }
+
+    const rect = videoEl.getBoundingClientRect();
+
+    const boxWidth = rect.width;
+    const boxHeight = rect.height;
+
+    const videoWidth = videoEl.videoWidth;
+    const videoHeight = videoEl.videoHeight;
+
+    const videoAspect = videoWidth / videoHeight;
+    const boxAspect = boxWidth / boxHeight;
+
+    let renderedWidth, renderedHeight, offsetX, offsetY;
+
+    if (videoAspect > boxAspect) {
+      renderedWidth = boxWidth;
+      renderedHeight = boxWidth / videoAspect;
+      offsetX = 0;
+      offsetY = (boxHeight - renderedHeight) / 2;
+    } else {
+      renderedHeight = boxHeight;
+      renderedWidth = boxHeight * videoAspect;
+      offsetX = (boxWidth - renderedWidth) / 2;
+      offsetY = 0;
+    }
+
+    const displayX = offsetX + (videoX / videoWidth) * renderedWidth;
+    const displayY = offsetY + (videoY / videoHeight) * renderedHeight;
+
+    return { displayX, displayY };
+  };
 
   useEffect(() => {
     const handleEsc = (e) => {
@@ -69,15 +182,15 @@ function VideoModal({ room, stream, onClose }) {
     }
   }, [points]);
 
-  const handleFinalSave = async () => {
+  const handleFinalSave = async (finalRoiSets = roiSets) => {
     try {
       setIsSaving(true);
 
       const payload = {
         roomId: room,
-        rois: roiSets.map((roiSet, roiIndex) => ({
-          roi_index: roiIndex + 1,
-          points: roiSet.map((point, pointIndex) => ({
+        rois: finalRoiSets.map((roi) => ({
+          roi_index: roi.roi_index,
+          points: roi.points.map((point, pointIndex) => ({
             point_x: point.videoX,
             point_y: point.videoY,
             point_order: pointIndex + 1,
@@ -90,15 +203,14 @@ function VideoModal({ room, stream, onClose }) {
       const data = await addPoints(payload);
       console.log("SERVER RESPONSE:", data);
 
+      await loadSavedROIs();
+
       setIsSaving(false);
       setIsSaved(true);
 
       setTimeout(() => {
-        setPoints([]);
-        setRoiSets([]);
         setIsSaved(false);
-        setIsMarking(false);
-      }, 3000);
+      }, 2000);
     } catch (error) {
       console.error("Failed to save room ROI:", error);
       setIsSaving(false);
@@ -166,139 +278,142 @@ function VideoModal({ room, stream, onClose }) {
     });
   };
 
+  const handleStartNewROI = () => {
+    if (roiSets.length >= 2) return;
+    setPoints([]);
+    setIsMarking(true);
+  };
+
+  const handleCancelCurrentROI = () => {
+    setPoints([]);
+    setIsMarking(false);
+  };
+
+  const handleSaveCurrentROI = async () => {
+    if (points.length !== 4) return;
+
+    const nextIndex =
+      roiSets.length === 0
+        ? 1
+        : roiSets.some((roi) => roi.roi_index === 1)
+          ? 2
+          : 1;
+
+    const currentROI = {
+      roi_index: nextIndex,
+      points: [...points],
+    };
+
+    const updatedSets = [...roiSets, currentROI].sort(
+      (a, b) => a.roi_index - b.roi_index,
+    );
+
+    setRoiSets(updatedSets);
+    setPoints([]);
+    setIsMarking(false);
+
+    // If 2 ROI sets are now complete, trigger final save
+    if (updatedSets.length === 2) {
+      await handleFinalSave(updatedSets);
+    }
+  };
+
+  const handleDeleteROI = async (roiIndexToDelete) => {
+    try {
+      await deleteROIPoints(room, roiIndexToDelete);
+      await loadSavedROIs();
+
+      console.log(`ROI ${roiIndexToDelete} deleted for room ${room}`);
+    } catch (error) {
+      console.error("Failed to delete ROI:", error);
+    }
+  };
+
+  const handleToggleViewROIs = () => {
+    setShowSavedROIs((prev) => !prev);
+  };
+
   return (
     <div
       className="fixed inset-0 z-[999] bg-black/80 flex items-center justify-center p-4"
       onClick={onClose}
     >
       <div
-        className="relative w-[90vw] h-[85vh] bg-[#DFDEDA] rounded-xl p-4 shadow-2xl"
+        className="w-[90vw] h-[90%] min-h-0 bg-[#DFDEDA] flex flex-col rounded-2xl"
         onClick={(e) => e.stopPropagation()}
       >
-        <button
-          onClick={onClose}
-          className="absolute top-8 right-8 z-20 shadow-gray-500 shadow-sm border-[#858585] border-3 text-secondary hover:scale-102 rounded-full p-2"
+        <div
+          className="relative  w-[full] h-[90%] bg-[#DFDEDA] rounded-xl p-4"
+          onClick={(e) => e.stopPropagation()}
         >
-          <X size={22} color="#858585" />
-        </button>
+          <p className="absolute top-8 left-8 z-20 text-secondary text-title ">
+            {now.toLocaleTimeString()} | {now.toLocaleDateString()}
+          </p>
 
-        <p className="absolute top-8 left-8 z-20 text-secondary text-title ">
-          {now.toLocaleTimeString()} | {now.toLocaleDateString()}
-        </p>
+          <div className="relative w-full h-full rounded-lg overflow-hidden">
+            <video
+              ref={modalVideoRef}
+              autoPlay
+              playsInline
+              className="w-full h-full object-contain bg-black"
+            />
 
-        <div className="flex flex-row gap-5 absolute bottom-8 right-8 z-20">
-          <button
-            onClick={async () => {
-              if (points.length === 4) {
-                const currentROI = points;
+            <svg
+              className="absolute inset-0 z-10 pointer-events-none w-full h-full"
+              width="100%"
+              height="100%"
+              viewBox={`0 0 ${modalVideoRef.current?.clientWidth || 0} ${modalVideoRef.current?.clientHeight || 0}`}
+              preserveAspectRatio="none"
+            >
+              {showSavedROIs &&
+                roiSets.map((roi) =>
+                  roi.points.length === 4 ? (
+                    <polygon
+                      key={`saved-poly-${roi.roi_index}`}
+                      points={roi.points
+                        .map((p) => `${p.displayX},${p.displayY}`)
+                        .join(" ")}
+                      fill="none"
+                      stroke={roi.roi_index === 1 ? "cyan" : "orange"}
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  ) : null,
+                )}
 
-                const updatedSets = [...roiSets, currentROI];
-                setRoiSets(updatedSets);
+              {points.length === 4 && (
+                <polygon
+                  points={points
+                    .map((p) => `${p.displayX},${p.displayY}`)
+                    .join(" ")}
+                  fill="none"
+                  stroke="lime"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              )}
+            </svg>
 
-                // 🔥 SECOND ROI → SEND TO BACKEND
-                if (updatedSets.length === 2) {
-                  try {
-                    setIsSaving(true);
-
-                    const payload = {
-                      roomId: room,
-                      rois: updatedSets.map((roiSet, roiIndex) => ({
-                        roi_index: roiIndex + 1,
-                        points: roiSet.map((point, pointIndex) => ({
-                          point_x: point.videoX,
-                          point_y: point.videoY,
-                          point_order: pointIndex + 1,
-                        })),
-                      })),
-                    };
-
-                    console.log("FINAL PAYLOAD:", payload);
-
-                    await addPoints(payload);
-
-                    setIsSaving(false);
-                    setIsSaved(true);
-
-                    setTimeout(() => {
-                      setPoints([]);
-                      setRoiSets([]);
-                      setIsSaved(false);
-                      setIsMarking(false);
-                    }, 3000);
-                  } catch (err) {
-                    console.error("Save failed:", err);
-                    setIsSaving(false);
-                  }
-
-                  return;
-                }
-
-                // 🔥 FIRST ROI → PREPARE FOR SECOND
-                setPoints([]);
-                setIsMarking(true);
-                return;
-              }
-
-              // ❌ Cancel logic
-              if (isMarking) {
-                setIsMarking(false);
-                setPoints([]);
-                setRoiSets([]);
-                return;
-              }
-
-              // ✅ Start configuring
-              setPoints([]);
-              setRoiSets([]);
-              setIsMarking(true);
-            }}
-            className="px-[2vw] py-[1vw] rounded-lg bg-[#A1A2A6] shadow-black shadow-sm text-secondary text-title hover:scale-102 transition"
-          >
-            {isSaving
-              ? "Saving..."
-              : isSaved
-                ? "Saved"
-                : points.length === 4
-                  ? roiSets.length === 0
-                    ? "Save 1st ROI"
-                    : "Save 2nd ROI"
-                  : isMarking
-                    ? "Cancel"
-                    : "Configure"}
-          </button>
-        </div>
-
-        <div className="relative w-full h-full rounded-lg overflow-hidden">
-          <video
-            ref={modalVideoRef}
-            autoPlay
-            playsInline
-            className="w-full h-full object-contain bg-black"
-          />
-          <svg
-            className="absolute inset-0 z-10 pointer-events-none w-full h-full"
-            width="100%"
-            height="100%"
-            viewBox={`0 0 ${modalVideoRef.current?.clientWidth || 0} ${modalVideoRef.current?.clientHeight || 0}`}
-            preserveAspectRatio="none"
-          >
-            {roiSets.map((set, setIndex) =>
-              set.map((point, index) => (
-                <div
-                  key={`saved-${setIndex}-${index}`}
-                  className="absolute z-20 w-4 h-4 rounded-full border-2 border-white -translate-x-1/2 -translate-y-1/2 pointer-events-none"
-                  style={{
-                    left: `${point.displayX}px`,
-                    top: `${point.displayY}px`,
-                    backgroundColor: setIndex === 0 ? "cyan" : "orange",
-                  }}
-                >
-                  <span className="absolute -top-6 left-1/2 -translate-x-1/2 text-white text-xs font-bold">
-                    {index + 1}
-                  </span>
-                </div>
-              )),
-            )}
+            {showSavedROIs &&
+              roiSets.map((roi) =>
+                roi.points.map((point, index) => (
+                  <div
+                    key={`saved-${roi.roi_index}-${index}`}
+                    className="absolute z-20 w-4 h-4 rounded-full border-2 border-white -translate-x-1/2 -translate-y-1/2 pointer-events-none"
+                    style={{
+                      left: `${point.displayX}px`,
+                      top: `${point.displayY}px`,
+                      backgroundColor: roi.roi_index === 1 ? "cyan" : "orange",
+                    }}
+                  >
+                    <span className="absolute -top-6 left-1/2 -translate-x-1/2 text-white text-xs font-bold">
+                      {index + 1}
+                    </span>
+                  </div>
+                )),
+              )}
 
             {points.map((point, index) => (
               <div
@@ -315,41 +430,65 @@ function VideoModal({ room, stream, onClose }) {
               </div>
             ))}
 
-            {points.length === 4 && (
-              <polygon
-                points={points
-                  .map((p) => `${p.displayX},${p.displayY}`)
-                  .join(" ")}
-                fill="none"
-                stroke="lime"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
+            {roiSets.length > 0 && (
+              <div className="absolute top-8 right-8 z-30 flex flex-col gap-3">
+                {roiSets.map((roi) => (
+                  <button
+                    key={`delete-roi-${roi.roi_index}`}
+                    onClick={() => handleDeleteROI(roi.roi_index)}
+                    className="px-5 py-3 rounded-lg bg-red-600 text-white shadow-black shadow-sm hover:scale-102 transition"
+                  >
+                    Delete ROI {roi.roi_index}
+                  </button>
+                ))}
+              </div>
+            )}
+
+            {isMarking && points.length < 4 && !isSaving && !isSaved && (
+              <div
+                className="absolute inset-0 z-10 cursor-crosshair bg-transparent"
+                onClick={handleOverlayClick}
               />
             )}
-          </svg>
-
-          {points.map((point, index) => (
-            <div
-              key={index}
-              className="absolute z-20 w-4 h-4 bg-red-500 rounded-full border-2 border-white -translate-x-1/2 -translate-y-1/2 pointer-events-none"
-              style={{
-                left: `${point.displayX}px`,
-                top: `${point.displayY}px`,
-              }}
+          </div>
+        </div>
+        <div className="w-[90vw] h-full flex flex-row justify-between items-center p-4 bg-[#DFDEDA] rounded-b-2xl">
+          <p className="text-primary font-semibold text-subheader font-montserrat">
+            {roomName}
+          </p>
+          <div className="flex flex-row justify-end gap-4 z-20">
+            <button
+              onClick={handleStartNewROI}
+              disabled={isMarking || roiSets.length >= 2 || isSaving}
+              className="px-[2vw] py-[1vw] rounded-lg bg-[#A1A2A6] shadow-black shadow-sm text-secondary text-title hover:scale-102 transition disabled:opacity-50 disabled:cursor-not-allowed"
             >
-              <span className="absolute -top-6 left-1/2 -translate-x-1/2 text-white text-xs font-bold">
-                {index + 1}
-              </span>
-            </div>
-          ))}
+              Add ROI
+            </button>
 
-          {isMarking && points.length < 4 && !isSaving && !isSaved && (
-            <div
-              className="absolute inset-0 z-10 cursor-crosshair bg-transparent"
-              onClick={handleOverlayClick}
-            />
-          )}
+            <button
+              onClick={handleSaveCurrentROI}
+              disabled={points.length !== 4 || isSaving}
+              className="px-[2vw] py-[1vw] rounded-lg bg-green-600 shadow-black shadow-sm text-white text-title hover:scale-102 transition disabled:opacity-50 disabled:cursor-not-allowed"
+            >
+              {isSaving ? "Saving..." : isSaved ? "Saved" : "Save ROI"}
+            </button>
+
+            <button
+              onClick={handleToggleViewROIs}
+              disabled={roiSets.length === 0}
+              className="px-[2vw] py-[1vw] rounded-lg bg-[#A1A2A6] shadow-black shadow-sm text-secondary text-title hover:scale-102 transition disabled:opacity-50 disabled:cursor-not-allowed"
+            >
+              {showSavedROIs ? "Hide ROI" : "View ROI"}
+            </button>
+
+            <button
+              onClick={handleCancelCurrentROI}
+              disabled={!isMarking || isSaving}
+              className="px-[2vw] py-[1vw] rounded-lg bg-red-500 shadow-black shadow-sm text-white text-title hover:scale-102 transition disabled:opacity-50 disabled:cursor-not-allowed"
+            >
+              Cancel
+            </button>
+          </div>
         </div>
       </div>
     </div>
@@ -777,6 +916,7 @@ export default function ViewClassroom({
       {selectedRoom && (
         <VideoModal
           room={selectedRoom}
+          roomName={roomName}
           stream={getStream(selectedRoom)}
           onClose={() => setSelectedRoom(null)}
         />
