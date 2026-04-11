@@ -160,5 +160,6 @@
 {"ip":"::1","level":"error","message":"ORGANIZATION ADD -- Organization validation failed: organization_owner: Path `organization_owner` is required., organization_name: Path `organization_name` is required.","method":"POST","timestamp":"2026-04-08 22:40:35"}
 {"ip":"::1","level":"error","message":"ORGANIZATION ADD -- Organization validation failed: organization_name: Path `organization_name` is required.","method":"POST","timestamp":"2026-04-08 22:45:19"}
 {"ip":"::1","level":"error","message":"ORGANIZATION ADD -- Organization validation failed: organization_name: Path `organization_name` is required.","method":"POST","timestamp":"2026-04-08 22:45:28"}
-{"ip":"::1","level":"error","message":"AUTH LOGIN -- User trizxd123@gmail.com password do not match with status code (400)","method":"POST","timestamp":"2026-04-09 20:38:06"}
-{"ip":"::1","level":"error","message":"AUTH LOGIN -- Cannot read properties of null (reading 'email') with status code (500)","method":"POST","timestamp":"2026-04-09 20:44:24"}
+{"ip":"::1","level":"error","message":"ORGANIZATION ADD -- Organization validation failed: organization_name: Path `organization_name` is required.","method":"POST","timestamp":"2026-04-09 22:27:11"}
+{"ip":"::1","level":"error","message":"AUTH UPDATE ORG -- populatedRoom is not defined with status code (500)","method":"PATCH","timestamp":"2026-04-10 00:26:30"}
+{"ip":"::1","level":"error","message":"AUTH UPDATE ORG -- populatedRoom is not defined with status code (500)","method":"PATCH","timestamp":"2026-04-10 00:27:45"}
